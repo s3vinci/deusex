@@ -1,0 +1,2712 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass ociamthesis-lyx
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+1.
+ Introduction
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{chapter}{1}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Like all living organisms, the fruit fly uses sensory information to navigate
+ its world.
+ To a first approximation a fruit fly
+\begin_inset Quotes ers
+\end_inset
+
+s behaviour in response to a sensory input can be described as a decision
+ making process of approach or retreat.
+ One such sense that the fly uses to decide whether to approach or retreat
+ is the sense of smell, which is a well-studied function, employed to gather
+ information about the environment, find food, mating partners, and detect
+ dangerous conditions signaled by harmful odours.
+ Flies are attracted to many odours innately, but also show innate aversion
+ to specific odours (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Niewalda:2008bm"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+When exposed to most odours, the response behaviour of flies depends on
+ experience: if an odour is associated with a sweetened reward (CS+, or
+ conditioned stimulus) and another odour offers no reward (CS- or unconditioned
+ stimulus) the flies will show a preference for the rewarded odour in a
+ binary choice test (
+\begin_inset Formula $Fig.1.1A$
+\end_inset
+
+ top panel).
+ However, if an odour is associated with a punishment (CS+) such as a shock,
+ fruit flies can be conditioned aversively to odours (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Perisse:2013fpa"
+
+\end_inset
+
+) and will choose the neutral odour (CS-) 
+\begin_inset Formula $(Fig.1A$
+\end_inset
+
+ bottom).
+ Understanding how these memories of odours are generated and how they affect
+ behaviour is an area of current research.
+ Researchers are also beginning to understand how innate and learned olfactory
+ behaviours interact with each other.
+ However, until now there have been few computational driven approaches
+ that have converted word models into mechanistic models that can explain
+ the growing behavioural data and make predictions and testable hypotheses
+ (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Luo:2010fb,Wessnitzer:2011dj"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figure1_circuit_a4_vers2.ai
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ a) In the learning paradigm the fly is shown a simple odour which is called
+ the CS- (conditional stimulus without reinforcement) for 2 minutes in appetitiv
+e trainining.
+ After that a fly is put into an empty chamber for 30 second where only
+ air is shown.
+ Finally, an odour is shown that is paired with a reinforcement( CS+) which
+ can be either sugar or shock.
+ After that, the fly is tested for odour preference when given a choice
+ between the CS+ and CS-.
+ In the case of aversive training the reinforced odour (CS+) is shown first.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+b) Calcium imaging experiment before and after learning has show a bidirectional
+ change in firing rate with the firing rate increasing for aversive learning
+ and decreasing for appetitive learning.
+\end_layout
+
+\begin_layout Plain Layout
+c) (i) DA neurons representing aversive reinforcement.
+ Studies suggest that neurons in PPL1 convey negative reinforcement and
+ are strongly activated by shock (Perrisse et al.
+ 2013).
+ In this illustration a selection of DA neurons innervating these MB zones
+ and the MB-M3 neurons on the tip of the 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ lobe are activated (red).
+ (ii) DA neurons representing appetitive reinforcement.
+ DA neurons in PAM innervate many discrete zones in the 
+\begin_inset Formula $\beta$
+\end_inset
+
+, 
+\begin_inset Formula $\beta'$
+\end_inset
+
+ and 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ lobes.
+ Ca2+ imaging of sugar-evoked activity suggests only some zones receive
+ appetitive reinforcement.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+d) The valence learning olfactory circuit is made of a group of approx 2.000
+ KCs which are task with odour identification.
+ There are two groups of dopaminergic neurons that signal either shock or
+ sugar and depress connections between KCs and MBONs.
+ M4 MBON bias towards retreat behaviour while V2 MBONs bias towards approach
+ behaviour.
+ The MVP MBON neuron inhibits the M4 neuron.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Odour representation become concentration invariant in the early stages
+ of olfactory processes 
+\end_layout
+
+\begin_layout Standard
+Flies detect odours using appoximately 1,200 olfactory receptor neurons
+ (ORNs) housed in their antennae.
+ The tuning of each ORN is determined by a single odorant receptor gene,
+ which controls whether the ORN is broadly or narrowly tuned to odours (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Hallem:2006iu"
+
+\end_inset
+
+).
+ Axons from the ORN expressing the same receptor always converge on the
+ same gomerulus.
+ Their activity is picked up by inhibitory and excitatory projection neurons
+ which perform normalization of the odour ( 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Luo:2010fb"
+
+\end_inset
+
+).
+ Excitatory projection neurons deliver information to the calyces in the
+ mushroom body while both inhibitory projection neurons and ePNs send informatio
+n to the Lateral Horn.
+ The lateral horn is associated with innate behavioral responses to odors,
+ such as sex-specific responses to pheromones during courtship (Datta et
+ al 2008), whereas the mushroom body is required for learned responses to
+ odors (de Belle and Heisenberg, 1994).
+\end_layout
+
+\begin_layout Section
+The MB is the centre for associative learning in the fruit fly
+\end_layout
+
+\begin_layout Standard
+The mushroom bodies are symmetrical structures with each mushroom body being
+ composed of approximately 2,000 Kenyon Cells (KCs) (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Turner:2008eo"
+
+\end_inset
+
+).
+ Lesion experiments and synaptic blocking of mushroom bodies output have
+ shown that that the mushroom body plays a critical role in memory formation
+ and retrieval (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Heisenberg:2009bu"
+
+\end_inset
+
+).
+ Experimental studies have shown that the MB maintains a sparse representation
+ of odours as each odour activates 8% of KCs (approximately 150 neurons)
+ (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Honegger:2011ja"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Subsection
+Similar odours have overlapping representations in the MB
+\end_layout
+
+\begin_layout Standard
+Previous experimental studies have shown that odours with similar chemical
+ properties have overlapping representations in the MBs ( 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Campbell:2013fb"
+
+\end_inset
+
+ ).
+ Behavioural experiments have shown flies have the ability to both generalize
+ similar odours and separate them depending on the training protocol.
+ If we use a first odour as a CS+ and train the fly to remember it as predicting
+ reward the fly will showcase the same behaviour when exposed for the first
+ time to a similar odour.
+ However if the second odour is shown to the fly in the training odour as
+ the neutral odour in the learning paradigm than the fly will not show preferenc
+e to it when compared to another neutral odour ( 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Campbell:2013fb"
+
+\end_inset
+
+ ).
+ 
+\end_layout
+
+\begin_layout Subsection
+The MB recurrent activity is critical for stabilizing odour memories
+\end_layout
+
+\begin_layout Standard
+Experimental studies have shown that olfactory representations in the mushroom
+ bodies are modulated by anterior paired lateral (APL) and dorsal paired
+ medial (DPM) neurons (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Krashes:2007fh"
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Lin:2014io"
+
+\end_inset
+
+).
+ The gap-junctional connection between DPM and APL appear to guarantee that
+ excitation from DPM is balanced by a similar magnitude of inhibition from
+ APL (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Pitman:2011ka"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Subsection
+Anatomical subdivisions of the MB have unique role in odour processing 
+\end_layout
+
+\begin_layout Standard
+The dendrites of the KCs form the calyx of the MB, and their axons project
+ anteriorly to form the peduncle before those axons terminate in one or
+ more lobes, termed 
+\begin_inset Formula $\alpha\beta$
+\end_inset
+
+ 
+\begin_inset Formula $\alpha',\beta'$
+\end_inset
+
+, and 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ lobe (Fig.1) (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Krashes:2007fh"
+
+\end_inset
+
+).
+ The 
+\begin_inset Formula $\alpha\beta$
+\end_inset
+
+ contains 800 KCs while the 
+\begin_inset Formula $\alpha',\beta'$
+\end_inset
+
+ contains 600 and the 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ lobe 400 of KCs and each subdivision is believed to have unique roles in
+ memory processing.
+\end_layout
+
+\begin_layout Standard
+In a previous study it has been shown by blocking different anatomical subdivisi
+ons of KCs, that the 
+\begin_inset Formula $\alpha\beta$
+\end_inset
+
+ neurons are needed during retrieval of aversive and appetitive memory whereas
+ 
+\begin_inset Formula $\alpha'\beta'$
+\end_inset
+
+ core neurons, when blocked only affect appetitive memory (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Perisse:2013fp"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename mb_divisions.png
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ Gross anatomy of the mushroom body 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Tanaka:2008hg"
+
+\end_inset
+
+.
+ Dashed lines reflect the compartments defined by MBON dendrites (some lines
+ obscured).
+ The 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ and 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ lobes are each divided into three compartments, and 
+\begin_inset Formula $\beta$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta'$
+\end_inset
+
+ are each divided into two, 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ is divided into five
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+MBONs guide approach and retreat behaviours
+\end_layout
+
+\begin_layout Standard
+Outputs from approximately 2,000 Kenyon cells of the mushroom body converge
+ onto a population of 34 mushroom body output neurons (MBONs) .
+ 
+\end_layout
+
+\begin_layout Standard
+The MBON dendrites divide the two lobes and the base of the pedunculus into
+ a small number of serial, nonoverlapping compartments, within which the
+ dendrite densely contacts either all KCs or an anatomically distinct subpopulat
+ion (KC axons in the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+/
+\begin_inset Formula $\alpha$
+\end_inset
+
+ lobes are clustered into anterior, middle, and posterior groups, in the
+\begin_inset Formula $\beta$
+\end_inset
+
+/
+\begin_inset Formula $\beta'$
+\end_inset
+
+ lobes into posterior, surface, and core groups, and in the 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ lobe into main and dorsal groups.) The MBONs innervating each compartment
+ are genetically distinct, and each projects characteristically to other
+ regions of the brain.
+ MBONs project from the mushroom body to several regions.
+ A small number of excitatory neurons innervating the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ or 
+\begin_inset Formula $\alpha'$
+\end_inset
+
+ lobes project to lateral horn, a region implicated in control of innate
+ odor- related behaviors.
+\end_layout
+
+\begin_layout Standard
+And every MBON projects to four neuropils just outside the mushroom body:
+ the crepine , the superior medial protocerebrum (SMP) the superior intermediate
+ protocerebrum and the superior lateral protocerebrum where input from the
+ approach and retreat MBONs is believed to be transformed into motor control.
+ 
+\end_layout
+
+\begin_layout Standard
+We can classify MBONs according to the behaviour they bias towards.
+ In two recent studies it was shown by silencing and activating all 34 MBONs
+ that they either promote approach or retreat behaviour (
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Aso:2014bh,Owald:2015cn"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+For example, experiments for one such MBON (
+\begin_inset Formula $M4\beta')$
+\end_inset
+
+ have shown bi-directional change in firing rate of the neuron controlled
+ by the reinforcement used (appetitive or aversive) .
+ Calcium imaging before and after training have shown the response decreases
+ compared to the naive response after appetitive learning and increased
+ after aversive learning ( Fig.
+ 2B).
+ Furthermore, optogenetic activation of the M4 neurons changed a neutral
+ behaviour into avoidance behaviour and blocking the neuron converted a
+ naive odour approach into odour retreat in naïve flies (flies that had
+ an innate repulsion to an odour without learning).
+ (
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Owald:2015cn"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Section
+DAs convey reward and punishment signals
+\end_layout
+
+\begin_layout Standard
+Dopaminergic neurons (DAs) are the most prevalent modulatory neurons that
+ innervate the mushroom bodies.
+ There are distinct dopaminergic neurons that provide positive and negative
+ value signals.
+ The two major clusters where most DANs reside are the PPL and the PAM clusters
+ (Fig.
+ 1c).
+ Positive reinforcement are provided by subsets of the approximately 100
+ DAs in the PAM cluster (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Burke:2012jt"
+
+\end_inset
+
+).
+ They predominately innervate nearby zones in the 
+\begin_inset Formula $\beta,\beta',\gamma$
+\end_inset
+
+ lobes.
+ Negative reinforcement such as from electric shock or bitter substances
+ appears to be conveyed by DANs housed in the PPL cluster.
+ Each PPL DAN that innervates the mushroom bodies projects presynaptic terminals
+ on the vertical lobes 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ or 
+\begin_inset Formula $\alpha’$
+\end_inset
+
+ or heel and surface of the peduncle (David Owald & Scott Waddell – in review).
+ The dendrites of MBONs is restricted to few DAN zones.
+ For example for the MBON we previously discussed (M4
+\begin_inset Formula $\beta'$
+\end_inset
+
+) experimental data exists to support that the axons from sugar rewarding
+ dopaminergic neurons overlap with the dendrites of the MBON (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Owald:2015cn"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Subsection
+DAs convey reward and punishment signals in different areas of the mushroom
+ body 
+\end_layout
+
+\begin_layout Standard
+Distinct DAs convey the effects of sugar and water reward as opposed to
+ the same neurons representing subjective value such as in the case of negative
+ reinforcing DAs (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Perisse:2013fp"
+
+\end_inset
+
+).
+ The sugar and water responsive DAs project to unique zones on the MB lobes,
+ thus suggesting that learning-related plasticity is represented at different
+ axon terminals along the lobes of the mushroom body.
+ It is believed that since DAs reaches a subset of KCs axons, they modify
+ KC output synapses onto MBONs in their respective zone.
+ Thus water memories and sugar memories are predicted to have unique KC-MBON
+ connections that represent them (
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lin:2014ix"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Subsection
+DA modulated learning changes odour drive to KC-MBON synapses
+\end_layout
+
+\begin_layout Standard
+A hypothesis of valence learning proposes that learning modifies subsets
+ of KC-MBON pathways which in naive flies are balanced (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Owald:2015cn"
+
+\end_inset
+
+).
+ Appetitive responding DAs promotes odor approach by depressing odor drive
+ to 'avoidance' MBONs and possibly by strenghtening approach pathways.
+ Conversely, aversive responding DAs promotes depressing odour drive to
+ 'approach' MBONs.
+\end_layout
+
+\begin_layout Subsection
+DA state control
+\end_layout
+
+\begin_layout Standard
+Sugar memory is most robustly expressed in hungry flies and similarly thirst
+ promotes the expression of water memory.
+ It appears that forming these different memories different zones of the
+ MB provides the anatomical requirements in which state control be implemented.
+ Interestingly a group of DA neurons that provide the inhibitory constraint
+ to the expression of sugar memory (Lin et al, 2014 ) occupy the same zones
+ in the heel and peduncle of MB as the MVP2 approach neuron whose activity
+ drives approach behaviour.
+ Thus it seems likely that the internal state of hunger skews the balance
+ of MBON pathways to favour approach.
+ It has not been yet shown whether the activation of thirst involves a similar
+ layer of control.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Fig_starved_vs_fed.ai
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ Calcium imaging response of the MVP2 MBON to 4 different odours in two
+ different states: starved vs fed (David Owald - private correspondence).
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Previous modelling attempts of olfactory learning
+\end_layout
+
+\begin_layout Standard
+Previous modelling efforts of the fruit fly's olfactory circuit have mostly
+ focused on the neurons implicated in olfactory processing before reaching
+ the MBONs, since 3 ladmark papers this year opened the path to modelling
+ them 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hige:2015er,Owald:2015cn"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Aso:2014bh"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+However, there has been one study that reproduced the valence learning capacity
+ of the olfactory circuit (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Wessnitzer:2011dj"
+
+\end_inset
+
+).
+ They created a spiking model with dopamine modulated plasticity occurring
+ at the synapses between KCs and MBONs and have show that the MBON can learn
+ to distinguish between odours of opposite valences.
+ In their model, contrary to current evidence dopamine potentiates the weights.
+ Their model predicts the fly can also learn an odour mixture discrimination
+ task where one half of the odour is paired with a negative reinforcement
+ and another half is neutral which has been shown experimentally in the
+ bee (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Giurfa:2003dd"
+
+\end_inset
+
+ ).
+ 
+\end_layout
+
+\begin_layout Section
+Putting it all together
+\end_layout
+
+\begin_layout Standard
+The model that was previously discussed serves as a good starting point.
+ We have modified the model's dopamine modulated plasticity learning rule
+ to explore biologically plausible mechanisms for learning valences of aversive
+ and appetitive odours.
+ To explore the coding space MBONs form and the competition between MBONs
+ which code for approach and those which code for retreat, we modelled two
+ MBONs, one that drives each behaviour.
+ 
+\end_layout
+
+\begin_layout Standard
+Experimental evidence supports the theory that dopamine dopamine should
+ always depress the synapse during plasticity (
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Cassenaer:2007go"
+
+\end_inset
+
+).
+ However, previous modelling efforts have shown that bi-directional dopamine
+ modulation can have computational benefits such as learning more complex
+ tasks (
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Fremaux:2010fz"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+We will develop models for a simple dopamine modulated learning rule always
+ leads to depression and for more complex dopamine modulated rule that allow
+ for bi-directional control of the synapse and compare which can reconcile
+ experimental evidence better.
+ 
+\end_layout
+
+\begin_layout Chapter
+2.
+ Methods
+\end_layout
+
+\begin_layout Standard
+Experiments of the 
+\begin_inset Formula $M4\beta'$
+\end_inset
+
+ MBON were performed by David Owald at the CNCB and motivated the simulations
+ which were created by the author.
+ In this first stage we tested dopamine modulated plasticity in the olfactory
+ circuit of the fly that can only depress the synapse.
+\end_layout
+
+\begin_layout Section
+Connectivity
+\end_layout
+
+\begin_layout Standard
+We used experimental data that traces the connectivity between KCs and output
+ neurons (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Aso:2014bh"
+
+\end_inset
+
+).
+ The 
+\begin_inset Formula $M4\beta'$
+\end_inset
+
+ neuron receives input from 200 KCs from the 
+\begin_inset Formula $\beta$
+\end_inset
+
+ lobe and 300 KCs from the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ lobe.
+ The MVP2 neuron receives input from 300 KCs from the 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ lobe and 200 KCs from the 
+\begin_inset Formula $\alpha'$
+\end_inset
+
+ lobe.
+ We do not know the initial synaptic efficacies (weights) between KCs and
+ MBONs.
+ We make the assumption that the weights between KCs and MBONs have uniform
+ random strengths, and have found that by tuning them between 0 nS and 2
+ Ns we can reach MBON firing rates of 60 hz which has been show experimentally
+ (
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Hige:2015er"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Section
+MB Kenyon Cells model
+\end_layout
+
+\begin_layout Standard
+We created a spiking model of the mushroom body valence learning circuit.
+ The three main components that required modelling were the Kenyon Cells,
+ the MBONs and DAs.
+ To simulate an odour we first select randomly 200 neurons that are activated
+ when an odour is shown, to ensure 10% sparseness (Andrew Lin et al.
+ 2014).
+ We subsequently generated spike trains which are tuned to known statistics
+ of KC spikes (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Turner:2008eo"
+
+\end_inset
+
+).
+ KC during spontaneous activity show spiking activity that averages around
+ ~0.1 Hz.
+ 
+\end_layout
+
+\begin_layout Standard
+When an odour is shown, the 200 KCs fire at 2 Hz with a large concentration
+ of spikes occurring in the first 100 ms.
+ We generated KC spike trains that fit these properties.
+ 
+\end_layout
+
+\begin_layout Section
+MBONs model
+\end_layout
+
+\begin_layout Standard
+There are 34 MBONs that bias for either approach or retreat.
+ As a starting point we modelled two MBONs, one for approach and one for
+ retreat (M4 and MVP2).
+ Each MBON samples 800 KCs with 200 KCs overlap (
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Aso:2014bh"
+
+\end_inset
+
+) .
+ A recent study peformed who cell recordings of MBONs and observed their
+ firing rate is approximately 60 hz before learning.
+ Furthermore in contrast to KCs they observed that MBONs are active even
+ when no stimulus is shown.
+ We used a Linear Integrate and Fire (LIF) model with parameters that were
+ taken from a recent modelling paper where whole cell recordings of MBONs
+ was performed 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hige:2015er"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Default Value
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Symbol 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MBON Membrane Time Constant 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20 ms 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tau_{m}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MBON Spiking threshold 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-40 mV 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{th}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MBON Resting membrane potential 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-60 mV 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{inh}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MBON Excitatory conductance 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0 mV 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $E_{ex}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MBON Inhibitory conductance 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-80 mV 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $E_{inh}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figure6 - MBON mv.ai
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ A) Whole cell recording from an MBON.
+ Red dots represent spikes.
+ The shaded area represents a 1-s odor representation B) An MBON simulated
+ for 2 s.
+ The stimulus starts at 500 ms and lasts for 1 second (Higue et al, 2015)
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+LIF Neuron Model
+\end_layout
+
+\begin_layout Standard
+We used the conductance based LIF model to model the MBONs.
+ The LIF neuron equation is as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\tau_{m}\frac{dV}{dt}=(V_{rest}-V)+g_{ex}(E_{ex}-V)+g_{inh}(E_{inh}-V).
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+Here V is the membrane potential of the neuron as a function of time , 
+\begin_inset Formula $\tau_{m}$
+\end_inset
+
+is the membrane time constant, 
+\begin_inset Formula $V_{rest}$
+\end_inset
+
+is the resting membrane potential, 
+\begin_inset Formula $E_{ex}$
+\end_inset
+
+is the excitatory reversal potential and 
+\begin_inset Formula $E_{in}$
+\end_inset
+
+is the inhibitory reversal potential.
+ The synaptic conductances are expressed by 
+\begin_inset Formula $g_{ex}$
+\end_inset
+
+(excitatory) and 
+\begin_inset Formula $g_{inh}$
+\end_inset
+
+(inhibitory).
+ They are modelled according to the following equations:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\tau_{ex}\frac{dg_{ex}}{dt}=-g_{ex}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+and
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\tau_{inh}\frac{dg_{inh}}{dt}=-g_{inh},
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\tau_{ex}$
+\end_inset
+
+and 
+\begin_inset Formula $\tau_{inh}$
+\end_inset
+
+are the synaptic time constants for the excitatory and the inhibitory conductanc
+e, respectively.
+ When the neuron receives an action potential from a presynaptic cell the
+ postsynaptic conductance increases by the following formulas: 
+\begin_inset Formula $g_{ex}\rightarrow g_{ex}+\Delta g_{ex}$
+\end_inset
+
+ and 
+\begin_inset Formula $g_{inh}\rightarrow g_{inh}+\Delta g_{inh}$
+\end_inset
+
+ for excitatory and inhibitory synapses, respectively.
+ 
+\end_layout
+
+\begin_layout Section
+The three-factor plasticity learning rule
+\end_layout
+
+\begin_layout Standard
+Here we introduce a learning rule based on evidence that STDP has been observed
+ in the locust mushroom bodies (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Cassenaer:2007go"
+
+\end_inset
+
+).
+ In this dopamine modulated STDP model, pre-post firing times create a temporal
+ 'tag' in the participating synapses,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{\text{d}tag_{ij}(t)}{\text{d}t}=A_{+}x_{j}(t)S_{i}(t)-A_{-}y_{i}(t)S_{j}(t),
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $A_{+}$
+\end_inset
+
+and 
+\begin_inset Formula $A,$
+\end_inset
+
+ determine the amplitude of maximum potentiation and depression that the
+ tag can undergo.
+ 
+\begin_inset Formula $S_{i}(t)$
+\end_inset
+
+ is the spike train of the i-th neuron, given by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+S_{i}(t)=\sum_{k}\delta(t-t_{i,k}^{*}),
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+where 
+\begin_inset Formula $\delta$
+\end_inset
+
+ is the Dirac's delta and 
+\begin_inset Formula $t{}_{i,k}^{*}$
+\end_inset
+
+ is the timing of the spike, where 
+\begin_inset Formula $i$
+\end_inset
+
+ is the i-th neuron and 
+\begin_inset Formula $k$
+\end_inset
+
+ is the index of the spike.
+ The tag increases when the postsynaptic neuron fires an action potential
+ and depends on the timing of the last spike timings of the presynaptic
+ neuron through the variable 
+\begin_inset Formula $x_{ij}(t)$
+\end_inset
+
+ which evolves accordingly to: 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{dx_{j}(t)}{dt}=-\frac{x_{j}(t)}{\tau_{+}}+S_{j}(t).
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+The opposite happens when the presynaptic neuron fires an action potential,
+ the tag decreases depending on the postsynaptic neuron activity through
+ the variable 
+\begin_inset Formula $y_{ij}(t)$
+\end_inset
+
+ given by
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{dy_{i}(t)}{dt}=-\frac{y_{i}(t)}{\tau_{-}}+S_{i}(t).
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+These synapses will be depressed if the reward or punishment occurs soon
+ afterward.
+ The synaptic conductances are strenghtened in the presence of dopamine.
+\end_layout
+
+\begin_layout Plain Layout
+Since we are interested in investigating the functional role of the feedback
+ loop from the MBON to the DA neuron we model the DA neuron as an integrate
+ and fire neuron too.
+ The dopamine concentration (d(t) which modulates synaptic change is an
+ eligibility trace that increases,
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+d(t)=-\frac{d(t)}{\tau_{d}}+\sum_{k}\delta(t-t_{i,k}^{*}).
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+Synaptic change in our model is the result of dopamine concentration value
+ multipled by synaptic yag value at each time point.
+\end_layout
+
+\begin_layout Plain Layout
+Synaptic weight change is gated by the presence of dopamine.
+ Eq.
+ 9 shows that weight change occurs when dopamine concentration is above
+ 0.
+ Change is negative according to experimental evidence so we multiply by
+ -1.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{\text{d}w_{ij}(t)}{\text{d}t}=-d(t)\frac{tag_{ij}(t)}{dt}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+Table 1
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Default Value
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Symbol 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+STDP max potentiation amplitude 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.006 mV 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $A_{+}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+STDP max Depression amplitude 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.005 mV 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $A_{-}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+STDP Depression time constant 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20 ms 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tau_{-}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+STDP Potentiation time constant 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0 ms 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tau_{+}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dopamine time constant
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20 ms
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tau_{d}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Fig.2.3$
+\end_inset
+
+illustrates the learning rule.
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figure3_learningrule.ai
+	scale 70
+
+\end_inset
+
+
+\lang british
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+text to list of figures
+\end_layout
+
+\end_inset
+
+A) KC-MBON STDP learning rule, reproduced from Cassenaer and Laurent (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cassenaer:2007go"
+
+\end_inset
+
+).
+ In gray, the normal STDP rule in KC-MBON synapses, where 
+\begin_inset Formula $\delta$
+\end_inset
+
+t is the time of the postsynaptic spike minus the presynaptic spike, and
+ the y axis shows the percent change in KC-evoked EPSP size in MBONs following
+ five trials in which pre- and postsynaptic spikes were paired at the given
+ 
+\begin_inset Formula $\delta$
+\end_inset
+
+t.
+ In blue, the STDP rule observed when octopamine is injected 1s after pairing.
+ B) Dopamine modulated spike-timing dependent learning rule: Near-coincident
+ pre- and postsynaptic spikes causes synaptic depression.
+ C) i) Raster plot showing KCs firing in response to an odour ii) M4 neuron
+ memebrane potentia during appetitive training iii) Excitatory (green) and
+ Inhibitory(currents) during appetitive training D) i) The relative timing
+ of firings of the pre and post synaptic neurons induce changes in the synaptic
+ 'tag' variable according to the dopamine modulated STDP learning rule.
+ ii) The synaptic tag decays to zero (top), but if extracellular dopamine
+ are present during the critical time window (middle) the maximal synaptic
+ conductance w is modified (iii) The synaptic weight, here written as w
+ depresses as there have been pre-post spike pairs and dopamine is present
+ in the system
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Learning protocol
+\end_layout
+
+\begin_layout Standard
+In our learning paradigm we require KCs and MBONs to spike, together with
+ the presence of dopamine.
+ Whole cell recordings have shown how KCs respond to an odour (~ 2 hz) over
+ 1 second compared to their spontaneous activity (~ 0.1 hz) (
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Turner:2008eo"
+
+\end_inset
+
+ ).
+ However, it is not known how KCs respond to an odour when it is shown for
+ 2 minutes in a test tube as the experiments were performed.
+ It is however sufficient to show an odour for 2 seconds coincident with
+ reward or punishment for learning to take place ( Johannes Freisenbrug
+ - private correspondence).
+ For this reason we showed the odour for 2 seconds in our training paradigm.
+ 
+\end_layout
+
+\begin_layout Chapter
+Results
+\end_layout
+
+\begin_layout Standard
+Our experimental collaborator has shown that when calcium imaging the 
+\begin_inset Formula $M4\beta'$
+\end_inset
+
+ neuron, the activity changed both after appetitive and after aversive training.
+ We simulated the M4 MBON during both appetitive and aversive learning scenarios
+ 
+\begin_inset Formula $(\mbox{Fig.3.2}$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Section
+Odours have a balance of approach and retreat drive before training
+\end_layout
+
+\begin_layout Standard
+We assumed that the M4 neuron directly influences the retreat behaviour
+ and therefore its relative firing rate compared to the response to a naive
+ odour indicates the retreat drive.
+ Similarly the MVP2 neuron directly influences approach and we can use it
+ to represent approach drive.
+ .
+ Therefore we visualized the valence coding space in our simulations by
+ plotting the response of an odour with respect to the firing rates of the
+ two MBON.
+ Before training we generated two odours which had a balanced drive of approach
+ and retreat, which is to say the firing rate of the M4 and MVP2 neurons
+ are approximantely equal (
+\begin_inset Formula $Fig.3.1$
+\end_inset
+
+).
+ This is because the M4 and MVP2 neuron sample an equal number of KCs which
+ are initialized with random strengths.
+ Training an odour with appetitive or aversive reinforcement will change
+ either the approach drive, retreat drive or both which can be visualized
+ in the valence coding space.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename odor_space2.ai
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ This figure shows the odor valence space coded by MBONs.
+ The white line represents a perfect balance between retreat and approach
+ drive corresponding to both MBONs populations firing at the same rate.
+ The green area corresponds to a higher drive towards approach.
+ Conversely, the red area corresponds to a higher retreat drive from MBONs.
+ The yellow area represents a neutral drive when the odor elicits a response
+ that is +- 10 Hz distance to the line that represents perfect balance.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Bi-directional change in firing rate can occur when dopamine depresseses
+ the KC-MBON synapses
+\end_layout
+
+\begin_layout Standard
+We simulated an appetitive and aversive training protocols by showing odours
+ for 2 seconds.
+ In the presence of dopamine.
+ We monitored the plasticity was active at the KCs-MBONs synapses and how
+ this affected odour response before and after learning.
+ 
+\end_layout
+
+\begin_layout Standard
+We observed that during appetitive training KC-M4 synaptic weights decreased
+ (
+\begin_inset Formula $Fig.3.2A,$
+\end_inset
+
+ ii) .
+ After learning, the response from the M4 neuron shows a decreased firing
+ rate profile compared to the naive state (
+\begin_inset Formula $Fig.3.2A$
+\end_inset
+
+ iii).
+ The firing rate decreased by 5 Hz compared to the initial state.
+ Conversely, aversive learning increased the response of the M4 neuron compared
+ to the naive state (
+\begin_inset Formula $Fig.3.2B$
+\end_inset
+
+ iii).
+ This is due to the fact that the firing rate of the MPV2 neuron decreased
+ ( Figure 5B iv) ), thus increasing the ratio of excitation to inhibition
+ (
+\begin_inset Formula $Fig.3.3$
+\end_inset
+
+) .
+\end_layout
+
+\begin_layout Standard
+The MVP2 neuron changed its response only after aversive training (Figure
+ 7 B iv).
+\end_layout
+
+\begin_layout Standard
+During aversive training aversive training, synaptic connections between
+ KC and the MVP2 output neuron suffered depression.
+ This in turn meant that the MVP2 neuron fired less and inhibition to the
+ M4 neuron decreased.
+\end_layout
+
+\begin_layout Standard
+The direct effect of dopamine modulation from appetitive coding dopaminergic
+ neurons can explain the decrease in firing rate during appetitive training
+ for the M4 neuron.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+* Separate aversive and appetitive
+\end_layout
+
+\begin_layout Plain Layout
+* We observe in the coding space
+\end_layout
+
+\begin_layout Plain Layout
+* Because both neurons change their .
+ The odour representation in valence space moves perpendicularly to the
+ line of equal drive and thus has a strong affect, whereas appetitive moves
+ along one axis.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures3_clean2.ai
+	scale 50
+
+\end_inset
+
+
+\lang british
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+text to list of figures
+\end_layout
+
+\end_inset
+
+ A) During appetitive training the dopamine modulated STDP rule targets
+ the KC-M4 synapses i) In our simulation an odour is shown for 1 s while
+ appetitive reinforcement is provided after 100 ms ii) A selection of 'weights'
+ are shown that represent the efficacy of the KC-M4 synapses (blue) undergoing
+ depression iii) Before( black) and after (light blue) M4 response to the
+ odour v) Before( black) and after ( purple) appetitive learning response
+ of the MVP2 neuron.
+ B) During aversive training dopamine modulated STDP targets the KC-MVP
+ synapse leading to disinhibition of the M4 neuron i) An odour is shown
+ for 3 s paired with aversive reinforcement ii) A selection of 'weights'
+ are shown that represent the efficacies of KC-MVP synapses ( purple).
+ An unchanged KC-M4 synapse(blue) is shown for reference C) The odour is
+ shown before and after appetitive learning in valence coding space D) The
+ odour is shown before and after aversive learning in the valence coding
+ space.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Inhibition between MBONs can enhance odour discrimination
+\end_layout
+
+\begin_layout Standard
+After aversive training the depresion of the KC-MPV2 synapses increased
+ the excitation - inhibition ratio in the M4 neuron, thus causing it to
+ increase its firing rate.
+ To get a change in the firing rate that qualitatively matched the experimental
+ results we had to choose the strength of the inhibitory MVP2-M4 synapse
+ to be 10 times stronger that excitatory KC-M4 synapses.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+!Discuss the actual amount of excitation and inhibition coming in
+\end_layout
+
+\begin_layout Plain Layout
+! 300 spikes with an average weight of 1 nS compared to 50 spikes with an
+ average weight of 2 nS.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To show that MBON inhibition is necessary we performed the simulation in
+ two conditions, once with the MVP2-M4 inhibitory synapse active (Figure
+ 6A) and once without ( Figure 6B).
+ The M4 MBON increases its firing rate only when there is an inhibitory
+ synapse between the MVP2 and M4 Further more, if we look at the valence
+ coding space (Figure 9 bottom), we observe that the inhibitory synapse
+ between the MBON increases discriminability by pushing the representation
+ depeer into the reretreat area (Fig 9 B bottom).
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figure7_lateral_inihibition_vers2.ai
+	scale 70
+
+\end_inset
+
+
+\lang british
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+text to list of figures
+\end_layout
+
+\end_inset
+
+ To see the functional implications of lateral inhibition we pair an odour
+ with aversive reinforcement and perform the simulation for 1 second with
+ and without inhibition.
+ A) Odour retrieval test without lateral inhibition In order: i) Response
+ of approach neuron to odour after aversive training vs naive response ii)
+ Response of retreat neuron to odour after aversive training vs.
+ naive response iii) Odour before and after training in coding space B)
+ Odour retreival test with lateral inhibition.
+ i) Response of retreat neuron to odor after aversive training vsi naive
+ ii) Response of approach neuron after aversive training vs.
+ naive; iii) Odor projected in valence space before and after training 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Trained odour can change the valence of a similar untrained odour 
+\end_layout
+
+\begin_layout Standard
+There is evidence that simialr odours have similar representation, therefore
+ we decided to test that learning has on untrained odours on our model.
+ 
+\end_layout
+
+\begin_layout Standard
+We have selected two odours with 50% overlap in the identity of KCs activated
+ two mimick similar odours that appear in nature.
+ In the naive state, both of the odours have a neutral valence ( Fig 7 A).
+ We subsequently trained, the first odour with appetitive reinforcement.
+ When we tested both of the two odurs for response in the MBON and observed
+ that both of them would trigger an approach signal (Fig 7 B) which is in
+ accordance with experimental data 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Campbell:2013fba"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+LIMITATION mechanism of learning even when learning is not present in order
+ to stabilize untrained representations.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figure7_overlap2_new.ai
+	scale 50
+
+\end_inset
+
+
+\lang british
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+text to list of figures
+\end_layout
+
+\end_inset
+
+ A) After appetitive training the odour is shown again this time by itself
+ and the activity of the appetitively trained M4 neuron is measured and
+ compared to the M4 neuron in the naive state B) After aversive training
+ the odour is shown again and the activity of the M4 neuron is measured
+ and compared to the naive state M4 neuron.
+ We observe a bi-directional change in response in accordance to experimenta
+ evidence.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Discussion 
+\end_layout
+
+\begin_layout Standard
+* we are testing the fly in a simplified paradigm.
+ cite: abbott for poisson, discussion of artificial stimuli 
+\end_layout
+
+\begin_layout Standard
+We have begun work that brings us closer to a model that can describe the
+ mechanistic interactions between the eleements of the fly valence learning
+ circuti.
+ I aim to explore how sparse odour information stored in a balanced spiking
+ network can be read by the output neurons through a multifactor learning
+ rule.
+ In the future we would like to expand our model with features such as:
+ MBON-DA feedback, explicitly modelling KCs depending on the lobe they belong
+ to, to create a state of the art model of the olfactory circuit that can
+ give an account for learning a stimulus from the first layer together with
+ transformation that occur until the the odour representation reaches the
+ layer that controls behaviour.
+ This will mean building a circuit that models antennae (ORNs), the antennal
+ lobe (PNs) & the mushroom bodies( KCs, MBONs and DAs).
+\end_layout
+
+\begin_layout Chapter
+Future work
+\end_layout
+
+\begin_layout Section
+An alternative learning rule
+\end_layout
+
+\begin_layout Standard
+We have so far used a simple phenomenological learning rule 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Fremaux:2010fz"
+
+\end_inset
+
+.
+ However plasticity can be either the results of changes at the presynaptic
+ or the postsynaptic terminal.
+ It is also unclear whether synaptic depression is sufficient to explain
+ behavioural results.
+ We will examine a more sophisticated concentration dependent dopamine rule
+ that can trigger both potentiation and depression and compare it to our
+ initial learning rule.
+ 
+\end_layout
+
+\begin_layout Section
+Implementing the MBON - DA feedback loop
+\end_layout
+
+\begin_layout Standard
+We have begun preliminary work on investigating the MBON - DA feedback loop.
+ Recent anatomical work shown that the M4 retreat biasing MBON has axons
+ projecting to appetitive DA neurons 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Owald:2015cn"
+
+\end_inset
+
+.
+ Our simulaitons predict that the feedback loop would have to be inhibitory
+ for stable learning.
+ In the case of an excitatory feedback loop, when showing an odour, KCs
+ would activate the M4 neuron which in turn would lead to depression, according
+ to our learning rule.
+ This would make a naive odour become appetitive (Figure 5)
+\end_layout
+
+\begin_layout Section
+State dependent memory retrieval 
+\end_layout
+
+\begin_layout Standard
+We have modelled the MVP2 neuron which inhibits the M4 neuron.
+ However the MVP2 neuron itself is inhibited by the DPM neuron.
+ During hunger it is known that the DPM neuron decreases its activity and
+ the MVP2 neuron increases creating the conditions for a fly to approach
+ a previously neutral odour.
+ We would like to model this mechanism together with a second state dependent
+ control mechanism of thirst.
+ 
+\end_layout
+
+\begin_layout Section
+Modelling Odour mixtures for experimental validation
+\end_layout
+
+\begin_layout Standard
+An unanswered question in the drosophila learning field is how would the
+ fruit fly react if it is shown odour mixtures of opposite valences.
+ Would a 50% appetitively train odour - 50% aversive mixture be regarded
+ as neutral.
+ Furthermore would the fly change its behaviour as a function of the concentrati
+on ratio?
+\end_layout
+
+\begin_layout Section
+A recurrent mushroom body circuit
+\end_layout
+
+\begin_layout Standard
+The first step will be to adding more realistic temporal dynamics in my
+ network model.
+ Currently, Kenyon Cells spikes are generated by a simple algorithm that
+ creates spike trains of a given firing rate and temporal profile.
+ However, in the future I would like to model the Kenyon Cells are neurons
+ with dynamics that change over time.
+ This is because there is evidence that recurrent activity in the mushroom
+ bodies involving the APL and DPM neurons and perhaps recurrent activity
+ between KCs themselves are critical in stabilizing memories and in retrieving
+ them 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Krashes:2009iu"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The feedback from the APL to KCs ensures that inhibition is proIn the future
+ I will extend my work by creating more portional to the total amount of
+ excitation in the mushroom body, giving rise to global balance of excitation
+ and inhibition.
+ It is not known what plasticity mechanisms might give rise to the E-I balance
+ observed in the mushroom body.
+ Testing how sparse odor representation can be achieved through E-I balance
+ in realistic neurons will be a valuable effort on its own because it will
+ uncover potentially crucial simplifications Luo et al.
+ have overlooked.
+\end_layout
+
+\begin_layout Standard
+One obstacle in building a realistic model is tuning the strength of the
+ synapses in a realistic way.
+ A candidate mechanism could be the inhibitory plasticity rule developed
+ by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Vogels:2011er"
+
+\end_inset
+
+ which has been shown to stabilize the storage of memories when embedded
+ in a recurrent network.
+ This rule relies on a symmetrical STDP rule that leads to long term potentiatio
+n (LTP) of inhibition when a feed forward interneuron fires within a short
+ time difference of the postsynaptic cell, but long term depression (LTD)
+ at larger intervals (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Vogels:2011er"
+
+\end_inset
+
+).The rule results in the formation of an inhibitory 
+\begin_inset Quotes grd
+\end_inset
+
+anti-memory” that counteracts excitation to the network.
+\end_layout
+
+\begin_layout Standard
+Specifically, in the spiking network, the spiking activity of excitatory
+ neurons will be quickly balanced through inhibition provided by the APL
+ neuron.
+ This means that there is only a short temporal window during which downstream
+ neurons can decode this information.
+ It is not clear if multifactor learning rules are able to decode this highly
+ dynamic information.
+\end_layout
+
+\begin_layout Standard
+After we have finished building a model of the mushroom body that conveys
+ the rich temporal dynamic we will try to build a complete model of the
+ olfactory circuit by connecting the mushroom body to the antennal lobe
+ and the antennae.
+ A collegue of mine is studying the connectivity between PNs and KCs.
+ We will use his results to build a complete image.
+ We will also have to model the lateral horn.
+\end_layout
+
+\begin_layout Chapter
+Timeline
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Timeline.pdf
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

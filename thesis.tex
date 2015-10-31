@@ -1,0 +1,88 @@
+%% LyX 2.1.4 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[12pt,british,english]{ociamthesis-lyx}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[authoryear]{natbib}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\newcommand{\lyxmathsym}[1]{\ifmmode\begingroup\def\b@ld{bold}
+  \text{\ifx\math@version\b@ld\bfseries\fi#1}\endgroup\else#1\fi}
+
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+% ociamthesis-lyx v2.1
+% By Keith A. Gillow <gillow@maths.ox.ac.uk>
+% modified for LyX by Danny Price <danny.price@astro.ox.ac.uk>
+
+% Use graphics package
+\usepackage{graphicx}
+\usepackage{setspace}
+
+% The crest on the titlepage can be set by changing the def below.
+% You can get others from http://www.ox.ac.uk/branding_toolkit/
+\def\crest{{\includegraphics{titlepage/beltcrest.pdf}}}
+%\def\crest{{\includegraphics{titlepage/beltcrest-gold.pdf}}}
+
+% Set the text on the title page here
+\title{Modelling valence learning in the olfactory circuit of the fruit-fly}
+
+\author{Bayar Menzat}
+\college{Green Templeton College}
+\university{University of Oxford}
+%\renewcommand{\submittedtext}{change the default text here if needed}
+\degree{Transfer Report}
+\degreedate{Supervised by: Dr Tim Vogels and Dr Scott Waddell}
+
+\usepackage{fullpage}
+\usepackage{caption}
+\captionsetup{font={small,stretch=0.8}}
+
+
+%\usepackage{babel}
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+% Document Setup
+% You shouldn't have to touch anything in this box.
+
+
+% Display title page (generated from preamble)
+\maketitle
+
+\include{abstract/Abstract}
+
+\include{glossary}
+
+\begin{romanpages} \tableofcontents{}\end{romanpages}
+
+% Choose your spacing (2.0 is double, 1.0 is single)
+\setstretch{1.7}
+
+\include{chapter1/chapter1}
+
+\global\long\def\bibname{References}
+ \bibliographystyle{authordate1}
+\bibliography{final_references}
+
+
+Harris KD \& Thiele A. 2011. Cortical state and attention. Nature
+Reviews Neuroscience 12, 509-523.
+
+Stringer C, Pachitariu M, Hildebrandt KJ, Bartho P, Harris KD, Linden
+J, Latham P, Lesica J, \& Sahani M. 2015. Changes in inhibition explain
+cortical variability and its role in sensory representations. Neural
+Coding, Computation and Dynamics (NCCD) Conference 2015. Bilbao, Spain.
+\end{document}

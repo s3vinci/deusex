@@ -1,0 +1,889 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass ociamthesis-lyx
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding 
+\font_roman times
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Introduction
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figure1_circuit_a4_vers2.ai
+	scale 70
+
+\end_inset
+
+
+\lang british
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+The olfactory reinforcement learning circuit and experiment
+\end_layout
+
+\end_inset
+
+Reinforcement learning experiment and circuit 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+A) In the learning paradigm the fly is shown a simple odour which is called
+ the CS- (conditional stimulus without reinforcement) for 2 minutes in the
+ appetitive training protocol.
+ Afterwards, a fly is put into an empty chamber for 30 second where only
+ air is present.
+ Finally, an odour is shown that is paired with a reinforcement (CS+) which
+ can be either sugar or shock.
+ After that, the fly is tested for odour preference when given a choice
+ between the CS+ and CS-.
+ Note: In the case of aversive training, the reinforced odour (CS+) is shown
+ first.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+B) Normalized calcium imaging response in the 
+\begin_inset Formula $M4\beta'$
+\end_inset
+
+ before and after learning shows a bidirectional change in firing rate with
+ the calcium response increasing for aversive learning and decreasing after
+ appetitive learning (averaged from ten flies).
+\end_layout
+
+\begin_layout Plain Layout
+C) (i) DA neurons representing aversive reinforcement.
+ Studies suggest that neurons in PPL1 convey negative reinforcement and
+ are strongly activated by shock (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Perisse:2013fpa"
+
+\end_inset
+
+).
+ In this illustration a selection of DA neurons innervating MB zones and
+ the MB-M3 neurons on the tip of the 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ lobe are activated (red).
+ (ii) DA neurons representing appetitive reinforcement.
+ DA neurons in PAM innervate many discrete zones in the 
+\begin_inset Formula $\beta$
+\end_inset
+
+, 
+\begin_inset Formula $\beta'$
+\end_inset
+
+ and 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ lobes.
+ Ca2+ imaging of sugar-evoked activity suggests only some zones receive
+ appetitive reinforcement.
+ Reproduced from 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Waddell:2013fu"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+D) The valence learning olfactory circuit is made of a group of approximately
+ 2.000 KCs which are tasked with odour identification.
+ There are two groups of dopaminergic neurons that signal either shock or
+ sugar and depress connections between KCs and MBONs.
+ M4 MBON biases towards retreat behaviour while MVP2 MBONs biases towards
+ approach behaviour.
+ The MVP2 MBON in this figure is show inhibiting the M4 retreat neuron (David
+ Owald - personal correspondence).
+ The DPM neuron decreases its activity during hunger and disinhibits KCs
+ which are known to innervate the MVP2 Approach neuron.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{chapter}{1}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename Fig_starved_vs_fed.ai
+	scale 30
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Activity in the MVP2 neuron starved and fed
+\end_layout
+
+\end_inset
+
+ Normalized calcium imaging response of the MVP2 neuron to two different
+ odours, averaged from ten flies.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename Fig2_methods1.ai
+	scale 78
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\lang british
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Learning components at the KC-MBON synapse
+\end_layout
+
+\end_inset
+
+Dopamine modulated STDP rule
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+A) KC-MBON STDP learning rule, reproduced from Cassenaer and Laurent (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Cassenaer:2007go"
+
+\end_inset
+
+).
+ In gray, the normal STDP rule in KC-MBON synapses, where 
+\begin_inset Formula $\delta$
+\end_inset
+
+t is the time of the postsynaptic spike minus the presynaptic spike, and
+ the y axis shows the percent change in KC-evoked EPSP size in MBONs following
+ five trials in which pre- and postsynaptic spikes were paired at the given
+ 
+\begin_inset Formula $\delta$
+\end_inset
+
+t.
+ In blue, the STDP rule observed when octopamine is injected 1s after pairing.
+ B) Dopamine modulated spike-timing dependent learning rule: Near-coincident
+ pre- and postsynaptic spikes induces synaptic depression.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Volumes/DeusEx/Dropbox/1 DPhil Vogels Lab/Ipython Vogels Project/Part1_Simple_Spiking_Odor_network/results/fig2_methods2.eps
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Learning components at the KC-MBON synapse
+\end_layout
+
+\end_inset
+
+Learning components at the KC-MBON synapse
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+A i) Raster plot showing KCs firing in response to an odour ii) 
+\begin_inset Formula $M4\beta'$
+\end_inset
+
+  neuron membrane potential during appetitive training iii) Excitatory (green)
+ and Inhibitory (currents) during appetitive training B) i) The relative
+ timing of firings of the pre and post synaptic neurons induce changes in
+ the synaptic 'tag' variable according to the dopamine modulated STDP learning
+ rule.
+ ii) The synaptic tag decays to zero (top), but if extracellular dopamine
+ are present during the critical time window (middle) the maximal synaptic
+ conductance w is modified (iii) The synaptic weight, here written as w
+ depresses as there have been pre-post spike pairs and dopamine is present
+ in the system
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Odour exposure protocol
+\end_layout
+
+\begin_layout Standard
+In our learning paradigm we require KCs and MBONs to spike, together with
+ the presence of dopamine.
+ Whole cell recordings have shown how KCs respond when exposed to an odour
+ over 1 second, firing at approximately 3 Hz, compared to a spontaneous
+ activity of approximately 0.1 Hz (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Turner:2008eo"
+
+\end_inset
+
+).
+ We can not know if the KCs fire constantly at 3 Hz for the entire duration
+ of appetitive or aversive conditioning or whether they adapt to the odour
+ and return to spontaneous activity.
+ It is however sufficient to show an odour for 2 seconds coincident with
+ reward or punishment for learning to take place (Johannes Freisenbrug -
+ personal correspondence).
+ For this reason we showed the odour for 2 seconds in our training paradigm.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Volumes/DeusEx/Dropbox/1 DPhil Vogels Lab/Ipython Vogels Project/Part1_Simple_Spiking_Odor_network/results/fig3_before_after.eps
+	scale 90
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\lang british
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+text to list of figures
+\end_layout
+
+\end_inset
+
+ Responses of the MVP2 (approach) and
+\begin_inset Formula $M4\beta'$
+\end_inset
+
+(retreat) neurons
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+A) During appetitive training the dopamine modulated STDP rule targets the
+ KC-
+\begin_inset Formula $M4\beta'$
+\end_inset
+
+ synapses i) In our simulation an odour is shown for 1 s while appetitive
+ reinforcement is provided after 100 ms ii) A selection of 'weights' are
+ shown that represent the efficacy of the KC-
+\begin_inset Formula $M4\beta'$
+\end_inset
+
+ synapses (blue) undergoing depression iii) Before (black) and after appetitive
+ learning (light blue) 
+\begin_inset Formula $M4\beta'$
+\end_inset
+
+ response to the odour iv) Before (black) and after (purple) appetitive
+ learning response of the MVP2 neuron.
+ B) During aversive training dopamine modulated STDP targets the KC-MVP
+ synapse leading to disinhibition of the M4 neuron i) An odour is shown
+ for 3 s paired with aversive reinforcement ii) A selection of 'weights'
+ are shown that represent the efficacies of KC-MVP synapses (purple).
+ iii) Before (black) and after aversive learning (light blue) 
+\begin_inset Formula $M4\beta'$
+\end_inset
+
+ response to the odour iv) Before (black) and after (purple) aversive learning
+ response of the MVP2 neuron.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Volumes/DeusEx/Dropbox/1 DPhil Vogels Lab/Ipython Vogels Project/Part1_Simple_Spiking_Odor_network/fig3_app.eps
+	scale 60
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Volumes/DeusEx/Dropbox/1 DPhil Vogels Lab/Ipython Vogels Project/Part1_Simple_Spiking_Odor_network/fig3_aversive.eps
+	scale 60
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\lang british
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+text to list of figures
+\end_layout
+
+\end_inset
+
+MBON coding space after learning 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+A) The odour is shown before and after appetitive learning in valence coding
+ space which shifts its position towards the green area of the valence space
+ B) The odour is shown before and after aversive learning in the valence
+ coding space which shifts its position towards the red area of the valence
+ space.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename currents_before_after_aversive.ai
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\lang british
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+text to list of figures
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+A) Synaptic current of the 
+\begin_inset Formula $M4\beta'$
+\end_inset
+
+ neuron before aversive training B) Synaptic currents of the 
+\begin_inset Formula $M4\beta'$
+\end_inset
+
+ neuron after aversive training
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Inhibition between MBONs can enhance odour discrimination
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+!Discuss the actual amount of excitation and inhibition coming in
+\end_layout
+
+\begin_layout Plain Layout
+! 300 spikes with an average weight of 1 nS compared to 50 spikes with an
+ average weight of 2 nS.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+text to list of figures
+\end_layout
+
+\end_inset
+
+ Aversive learning with and without MVP2 - 
+\begin_inset Formula $M4\beta'$
+\end_inset
+
+inhibition
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Fig_with_without.eps
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+To see the functional implications of lateral inhibition we pair an odour
+ with aversive reinforcement and perform the simulation for 1 second with
+ and without inhibition.
+ A) Odour retrieval test without lateral inhibition In order: i) Response
+ of approach neuron to odour after aversive training vs naive response ii)
+ Response of retreat neuron to odour after aversive training vs.
+ naive response iii) Odour before and after training in coding space B)
+ Odour retrieval test with lateral inhibition.
+ i) Response of retreat neuron to odor after aversive training vs.
+ naive ii) Response of approach neuron after aversive training vs.
+ naive; iii) Odor projected in valence space before and after training 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Volumes/DeusEx/Dropbox/1 DPhil Vogels Lab/Ipython Vogels Project/Part1_Simple_Spiking_Odor_network/fig4_lateral_hz.eps
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Volumes/DeusEx/Dropbox/1 DPhil Vogels Lab/Ipython Vogels Project/Part1_Simple_Spiking_Odor_network/fig4_lateral_coding.eps
+	scale 50
+
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Volumes/DeusEx/Dropbox/1 DPhil Vogels Lab/Ipython Vogels Project/Part1_Simple_Spiking_Odor_network/fig4_nolateral_coding.eps
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+text to list of figures
+\end_layout
+
+\end_inset
+
+ Aversive learning with and without MVP2 - 
+\begin_inset Formula $M4\beta'$
+\end_inset
+
+inhibition
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+To see the functional implications of lateral inhibition we pair an odour
+ with aversive reinforcement and perform the simulation for 1 second with
+ and without inhibition.
+ A) Odour retrieval test without lateral inhibition In order: i) Response
+ of approach neuron to odour after aversive training vs naive response ii)
+ Response of retreat neuron to odour after aversive training vs.
+ naive response iii) Odour before and after training in coding space B)
+ Odour retrieval test with lateral inhibition.
+ i) Response of retreat neuron to odor after aversive training vs.
+ naive ii) Response of approach neuron after aversive training vs.
+ naive; iii) Odor projected in valence space before and after training 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

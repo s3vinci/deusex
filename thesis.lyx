@@ -1,0 +1,258 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass ociamthesis-lyx
+\begin_preamble
+% ociamthesis-lyx v2.1
+% By Keith A. Gillow <gillow@maths.ox.ac.uk>
+% modified for LyX by Danny Price <danny.price@astro.ox.ac.uk>
+
+% Use graphics package
+\usepackage{graphicx}
+\usepackage{setspace}
+
+% The crest on the titlepage can be set by changing the def below.
+% You can get others from http://www.ox.ac.uk/branding_toolkit/
+\def\crest{{\includegraphics{titlepage/beltcrest.pdf}}}
+%\def\crest{{\includegraphics{titlepage/beltcrest-gold.pdf}}}
+
+% Set the text on the title page here
+\title{Modelling valence learning in the olfactory circuit of the fruit-fly}
+
+\author{Bayar Menzat}
+\college{Green Templeton College}
+\university{University of Oxford}
+%\renewcommand{\submittedtext}{change the default text here if needed}
+\degree{Transfer Report}
+\degreedate{Supervised by: Dr Tim Vogels and Dr Scott Waddell}
+
+\usepackage{fullpage}
+\usepackage{caption}
+\captionsetup{font={small,stretch=0.8}}
+
+
+%\usepackage{babel}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+% Document Setup
+\end_layout
+
+\begin_layout Plain Layout
+
+% You shouldn't have to touch anything in this box.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% Display title page (generated from preamble)
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+maketitle
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "abstract/Abstract.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "glossary.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{romanpages}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{romanpages}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% Choose your spacing (2.0 is double, 1.0 is single)
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setstretch{1.0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "chapter1/chapter1_figures.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\bibname}{References}
+\end_inset
+
+ 
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "references/bao,final_references,/Volumes/DeusEx/Dropbox/1 DPhil Vogels Lab/Ipython Vogels Project/Part1_Simple_Spiking_Odor_network/figures_paper/sex3_ref,papers"
+options "authordate1"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Harris KD & Thiele A.
+ 2011.
+ Cortical state and attention.
+ Nature Reviews Neuroscience 12, 509-523.
+\end_layout
+
+\begin_layout Standard
+Stringer C, Pachitariu M, Hildebrandt KJ, Bartho P, Harris KD, Linden J,
+ Latham P, Lesica J, & Sahani M.
+ 2015.
+ Changes in inhibition explain cortical variability and its role in sensory
+ representations.
+ Neural Coding, Computation and Dynamics (NCCD) Conference 2015.
+ Bilbao, Spain.
+\end_layout
+
+\end_body
+\end_document
