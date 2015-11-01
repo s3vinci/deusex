@@ -1,26 +1,17 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.30)  20 OCT 2015 23:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.9.15)  1 NOV 2015 18:52
 entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
 **thesis.tex
-
-("C:\Users\Exx\Dropbox\1 DPhil Vogels Lab\Ipython Vogels Project\Part1_Simple_S
-piking_Odor_network\ociamthesis\thesis.tex"
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
- lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
-ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
-an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
-ishmax, welsh, loaded.
-(C:\Users\Exx\AppData\Roaming\MiKTeX\2.9\tex\latex\ociamthesis-lyx.cls
+(./thesis.tex
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+(/Users/MacbookPro/Library/texmf/tex/latex/ociamthesis-lyx.cls
 Document Class: ociamthesis-lyx 2010/03/20 v2.1 OCIAM thesis class
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls"
-Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size12.clo"
-File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@chapter=\count80
@@ -35,22 +26,22 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
-Package: inputenc 2008/03/30 v1.1d Input encoding file
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\latin9.def"
-File: latin9.def 2008/03/30 v1.1d Input encoding file
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/latin9.def
+File: latin9.def 2015/03/17 v1.2c Input encoding file
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
+(/usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count88
 \float@exts=\toks16
@@ -58,24 +49,24 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks17
 \@floatcapt=\box27
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks18
 \ex@=\dimen103
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen104
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count89
@@ -116,41 +107,41 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks23
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
+Package graphics Info: Driver file: pdftex.def on input line 94.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+(/usr/local/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count101
@@ -158,25 +149,25 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+(/usr/local/texlive/2015/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip46
 \bibsep=\skip47
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count102
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
+(/usr/local/texlive/2015/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\preprint\fullpage.sty"
+(/usr/local/texlive/2015/texmf-dist/tex/latex/preprint/fullpage.sty
 Package: fullpage 1999/02/23 1.1 (PWD)
 \FP@margin=\skip48
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption.sty"
-Package: caption 2015/09/17 v3.3-111 Customizing captions (AR)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption3.sty"
-Package: caption3 2015/09/17 v1.7-111 caption3 kernel (AR)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
 \captionmargin=\dimen114
 \captionmargin@=\dimen115
@@ -189,20 +180,14 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \c@ContinuedFloat=\count103
 Package caption Info: float package is loaded.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
-Package: babel 2008/07/08 v3.8m The Babel package
+(/usr/local/texlive/2015/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2014/09/25 3.9l The Babel package
 
-*************************************
-* Local config file bblopts.cfg used
-*
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
-File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\english.ldf"
-Language: english 2005/03/30 v3.3o English support from the babel system
+(/usr/local/texlive/2015/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2012/08/20 v3.3p English support from the babel system
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
-File: babel.def 2008/07/08 v3.8m Babel common definitions
+(/usr/local/texlive/2015/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2014/09/25 3.9l Babel common definitions
 \babel@savecnt=\count104
 \U@D=\dimen121
 )
@@ -210,17 +195,18 @@ File: babel.def 2008/07/08 v3.8m Babel common definitions
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\english.ldf"
-Language: english 2005/03/30 v3.3o English support from the babel system
+(/usr/local/texlive/2015/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2012/08/20 v3.3p English support from the babel system
 ))
-("C:\Users\Exx\Dropbox\1 DPhil Vogels Lab\Ipython Vogels Project\Part1_Simple_S
-piking_Odor_network\ociamthesis\thesis.aux"
-("C:\Users\Exx\Dropbox\1 DPhil Vogels Lab\Ipython Vogels Project\Part1_Simple_S
-piking_Odor_network\ociamthesis\abstract/Abstract.aux")
-("C:\Users\Exx\Dropbox\1 DPhil Vogels Lab\Ipython Vogels Project\Part1_Simple_S
-piking_Odor_network\ociamthesis\glossary.aux")
-("C:\Users\Exx\Dropbox\1 DPhil Vogels Lab\Ipython Vogels Project\Part1_Simple_S
-piking_Odor_network\ociamthesis\chapter1/chapter1.aux"))
+
+Package Babel Warning: The package option `english' should not be used
+(Babel)                with a more specific one (like `british') on input line 
+57.
+
+(./thesis.aux (./abstract/Abstract.aux) (./glossary.aux)
+(./chapter1/chapter1.aux))
+\openout1 = `thesis.aux'.
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
 LaTeX Font Info:    ... okay on input line 57.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
@@ -234,7 +220,7 @@ LaTeX Font Info:    ... okay on input line 57.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
 LaTeX Font Info:    ... okay on input line 57.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count105
 \scratchdimen=\dimen122
@@ -247,10 +233,58 @@ LaTeX Font Info:    ... okay on input line 57.
 \MPnumerator=\count109
 \makeMPintoPDFobject=\count110
 \everyMPtoPDFconversion=\toks25
+) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
- <titlepage/beltcrest.pdf, id=1, 116.435pt x 139.52126pt>
+
+<titlepage/beltcrest.pdf, id=1, 116.435pt x 139.52126pt>
 File: titlepage/beltcrest.pdf Graphic file (type pdf)
 
 <use titlepage/beltcrest.pdf>
@@ -259,11 +293,11 @@ Package pdftex.def Info: titlepage/beltcrest.pdf used on input line 63.
  [1
 
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Exx/Dropbox/1 DP
-hil Vogels Lab/Ipython Vogels Project/Part1_Simple_Spiking_Odor_network/ociamth
-esis/titlepage/beltcrest.pdf>]
-("C:\Users\Exx\Dropbox\1 DPhil Vogels Lab\Ipython Vogels Project\Part1_Simple_S
-piking_Odor_network\ociamthesis\abstract/Abstract.tex"
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./title
+page/beltcrest.pdf>]
+\openout2 = `abstract/Abstract.aux'.
+
+ (./abstract/Abstract.tex
 
 Package natbib Warning: Citation `Perisse:2013fp' on page 2 undefined on input 
 line 11.
@@ -280,31 +314,34 @@ ne 18.
 
 
 ])
-("C:\Users\Exx\Dropbox\1 DPhil Vogels Lab\Ipython Vogels Project\Part1_Simple_S
-piking_Odor_network\ociamthesis\glossary.tex"
+\openout2 = `glossary.aux'.
+
+ (./glossary.tex
 LaTeX Font Info:    Try loading font information for U+msa on input line 5.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 5.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )) [3
 
 
 ]
-("C:\Users\Exx\Dropbox\1 DPhil Vogels Lab\Ipython Vogels Project\Part1_Simple_S
-piking_Odor_network\ociamthesis\thesis.toc" [1
+(./thesis.toc [1
 
 
 
 ])
 \tf@toc=\write3
+\openout3 = `thesis.toc'.
+
  [2]
-("C:\Users\Exx\Dropbox\1 DPhil Vogels Lab\Ipython Vogels Project\Part1_Simple_S
-piking_Odor_network\ociamthesis\chapter1/chapter1.tex"
+\openout2 = `chapter1/chapter1.aux'.
+
+ (./chapter1/chapter1.tex
 Chapter 1.
 
 Package natbib Warning: Citation `Niewalda:2008bm' on page 1 undefined on input
@@ -340,11 +377,7 @@ Type  H <return>  for immediate help.
                                                   
 l.38 ...le=0.6]{chapter1/Figure1_circuit_a4_vers2}
                                                   
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+? 
 
 Package natbib Warning: Citation `Perisse:2013fpa' on page 2 undefined on input
  line 64.
@@ -403,31 +436,34 @@ line 156.
 Package natbib Warning: Citation `Perisse:2013fp' on page 4 undefined on input 
 line 164.
 
-<chapter1/mb_divisions.png, id=45, 1130.2225pt x 794.97pt>
-File: chapter1/mb_divisions.png Graphic file (type png)
 
-<use chapter1/mb_divisions.png>
-Package pdftex.def Info: chapter1/mb_divisions.png used on input line 169.
-(pdftex.def)             Requested size: 282.55493pt x 198.742pt.
+! LaTeX Error: File `chapter1/mb_divisions' not found.
 
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.169 ...aphics[scale=0.25]{chapter1/mb_divisions}
+                                                  
+? 
 
 Package natbib Warning: Citation `Aso:2014bh' on page 4 undefined on input line
  178.
 
-[4] [5 <C:/Users/Exx/Dropbox/1 DPhil Vogels Lab/Ipython Vogels Project/Part1_Si
-mple_Spiking_Odor_network/ociamthesis/chapter1/mb_divisions.png>]
+[4]
 
-Package natbib Warning: Citation `Aso:2014bh' on page 6 undefined on input line
+Package natbib Warning: Citation `Aso:2014bh' on page 5 undefined on input line
  214.
 
 
-Package natbib Warning: Citation `Owald:2015cn' on page 6 undefined on input li
+Package natbib Warning: Citation `Owald:2015cn' on page 5 undefined on input li
 ne 214.
 
 
-Package natbib Warning: Citation `Owald:2015cn' on page 6 undefined on input li
+Package natbib Warning: Citation `Owald:2015cn' on page 5 undefined on input li
 ne 225.
 
+[5]
 
 Package natbib Warning: Citation `Burke:2012jt' on page 6 undefined on input li
 ne 244.
@@ -436,20 +472,19 @@ ne 244.
 Package natbib Warning: Citation `Owald:2015cn' on page 6 undefined on input li
 ne 254.
 
-[6]
 
-Package natbib Warning: Citation `Perisse:2013fp' on page 7 undefined on input 
+Package natbib Warning: Citation `Perisse:2013fp' on page 6 undefined on input 
 line 262.
 
 
-Package natbib Warning: Citation `Lin:2014ix' on page 7 undefined on input line
+Package natbib Warning: Citation `Lin:2014ix' on page 6 undefined on input line
  269.
 
+[6]
 
 Package natbib Warning: Citation `Lin:2014ix' on page 7 undefined on input line
  279.
 
-[7]
 
 ! LaTeX Error: File `chapter1/Fig_starved_vs_fed' not found.
 
@@ -459,23 +494,20 @@ Type  H <return>  for immediate help.
                                                   
 l.294 ...s[scale=0.2]{chapter1/Fig_starved_vs_fed}
                                                   
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+? 
 
-
-Package natbib Warning: Citation `Owald:2015cn' on page 8 undefined on input li
+Package natbib Warning: Citation `Owald:2015cn' on page 7 undefined on input li
 ne 310.
 
 
-Package natbib Warning: Citation `Aso:2014bh' on page 8 undefined on input line
+Package natbib Warning: Citation `Aso:2014bh' on page 7 undefined on input line
  313.
 
 
-Package natbib Warning: Citation `Owald:2015cn' on page 8 undefined on input li
+Package natbib Warning: Citation `Owald:2015cn' on page 7 undefined on input li
 ne 316.
 
+[7]
 
 Package natbib Warning: Citation `Bi:1998ve' on page 8 undefined on input line 
 329.
@@ -569,11 +601,7 @@ Type  H <return>  for immediate help.
 l.596 ...scale=0.7]{chapter1/Figure3_learningrule}
                                                   \foreignlanguage{british}{...
 
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+? 
 
 Package natbib Warning: Citation `Cassenaer:2007go' on page 15 undefined on inp
 ut line 603.
@@ -594,11 +622,7 @@ Type  H <return>  for immediate help.
                                                   
 l.670 ...raphics[scale=0.65]{chapter1/odor_space2}
                                                   
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+? 
 [17
 
 ] [18]
@@ -612,11 +636,7 @@ Type  H <return>  for immediate help.
 l.728 ...hics[scale=0.7]{chapter1/Figures3_clean2}
                                                   \foreignlanguage{british}{...
 
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+? 
 
 ! LaTeX Error: File `"chapter1/Figure20 - before_after"' not found.
 
@@ -627,11 +647,7 @@ Type  H <return>  for immediate help.
 l.753 ...chapter1/Figure20 - before_after\string"}
                                                   \foreignlanguage{british}{...
 
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+? 
 
 ! LaTeX Error: File `chapter1/currents_before_after_aversive' not found.
 
@@ -642,11 +658,7 @@ Type  H <return>  for immediate help.
 l.768 ...{chapter1/currents_before_after_aversive}
                                                   \foreignlanguage{british}{...
 
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+? 
 [19]
 
 ! LaTeX Error: File `chapter1/Figure7_lateral_inihibition_vers2' not found.
@@ -658,14 +670,14 @@ Type  H <return>  for immediate help.
 l.797 ...apter1/Figure7_lateral_inihibition_vers2}
                                                   \foreignlanguage{british}{...
 
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+? 
 
 Package natbib Warning: Citation `Campbell:2013fba' on page 20 undefined on inp
 ut line 831.
+
+
+LaTeX Warning: File `chapter1/Figure7_overlap2_new.ai' not found on input line 
+838.
 
 
 ! LaTeX Error: Unknown graphics extension: .ai.
@@ -677,10 +689,12 @@ Type  H <return>  for immediate help.
 l.838 ...le=0.6]{chapter1/Figure7_overlap2_new.ai}
                                                   \foreignlanguage{british}{...
 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+? 
 [20]
+
+LaTeX Warning: File `chapter1/Final_figure_trained_twice.ai' not found on input
+ line 879.
+
 
 ! LaTeX Error: Unknown graphics extension: .ai.
 
@@ -691,9 +705,7 @@ Type  H <return>  for immediate help.
 l.879 ...]{chapter1/Final_figure_trained_twice.ai}
                                                   \foreignlanguage{british}{...
 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+? 
 [21]
 Chapter 4.
 
@@ -738,71 +750,58 @@ e 1003.
 
 [24] [25]
 Chapter 5.
-<chapter1/Timeline.pdf, id=121, 794.97pt x 614.295pt>
-File: chapter1/Timeline.pdf Graphic file (type pdf)
 
-<use chapter1/Timeline.pdf>
-Package pdftex.def Info: chapter1/Timeline.pdf used on input line 1011.
-(pdftex.def)             Requested size: 556.4752pt x 430.00356pt.
+! LaTeX Error: File `chapter1/Timeline' not found.
 
-Overfull \hbox (103.50731pt too wide) in paragraph at lines 1011--1012
-[][][][][][] 
- []
-
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1011 ...degraphics[scale=0.7]{chapter1/Timeline}
+                                                  \selectlanguage{english}%
+? 
 ) [26
 
- <C:/Users/Exx/Dropbox/1 DPhil Vogels Lab/Ipython Vogels Project/Part1_Simple_S
-piking_Odor_network/ociamthesis/chapter1/Timeline.pdf>]
+]
 No file thesis.bbl.
 
 Package natbib Warning: There were undefined citations.
 
 [27
-\select@language{english}
-\@writefile{toc}{\select@language{english}}
-\@writefile{lof}{\select@language{english}}
-\@writefile{lot}{\select@language{english}}
 
-]
-("C:\Users\Exx\Dropbox\1 DPhil Vogels Lab\Ipython Vogels Project\Part1_Simple_S
-piking_Odor_network\ociamthesis\thesis.aux"
-("C:\Users\Exx\Dropbox\1 DPhil Vogels Lab\Ipython Vogels Project\Part1_Simple_S
-piking_Odor_network\ociamthesis\abstract/Abstract.aux")
-("C:\Users\Exx\Dropbox\1 DPhil Vogels Lab\Ipython Vogels Project\Part1_Simple_S
-piking_Odor_network\ociamthesis\glossary.aux")
-("C:\Users\Exx\Dropbox\1 DPhil Vogels Lab\Ipython Vogels Project\Part1_Simple_S
-piking_Odor_network\ociamthesis\chapter1/chapter1.aux")) ) 
+] (./thesis.aux (./abstract/Abstract.aux) (./glossary.aux)
+(./chapter1/chapter1.aux)) ) 
 Here is how much of TeX's memory you used:
- 4237 strings out of 493921
- 61426 string characters out of 3144882
- 118294 words of memory out of 3000000
- 7418 multiletter control sequences out of 15000+200000
- 20229 words of font info for 54 fonts, out of 3000000 for 9000
- 841 hyphenation exceptions out of 8191
- 36i,9n,41p,249b,473s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Exx\AppDat
-a\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\Ex
-x\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\
-Users\Exx\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.
-pk> <C:\Users\Exx\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
-crm1200.pk> <C:\Users\Exx\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\
-dpi600\ecbx1728.pk> <C:\Users\Exx\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkna
-ppen\ec\dpi600\ecti1440.pk> <C:\Users\Exx\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
-our\jknappen\ec\dpi600\ecrm1440.pk> <C:\Users\Exx\AppData\Local\MiKTeX\2.9\font
-s\pk\ljfour\jknappen\ec\dpi600\ecrm1728.pk> <C:\Users\Exx\AppData\Local\MiKTeX\
-2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk><C:/Program Files (x86)/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmsy8.pfb>
-Output written on thesis.pdf (32 pages, 774647 bytes).
+ 4669 strings out of 493089
+ 65968 string characters out of 6134842
+ 135865 words of memory out of 5000000
+ 8011 multiletter control sequences out of 15000+600000
+ 20229 words of font info for 54 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 38i,9n,41p,249b,495s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips
+/cm-super/cm-super-t1.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sf
+bx1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx
+1440.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx17
+28.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx2488
+.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1095.p
+fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfti1440.pfb>
+Output written on thesis.pdf (32 pages, 305559 bytes).
 PDF statistics:
- 538 PDF objects out of 1000 (max. 8388607)
+ 185 PDF objects out of 1000 (max. 8388607)
+ 130 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -169,11 +169,11 @@ key "Luo:2010fb,Wessnitzer:2011dj"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figure1_circuit_a4_vers2.ai
+	filename figs/Figure1_circuit_a4_vers2.eps
 	scale 70
 
 \end_inset
@@ -542,7 +542,7 @@ key "Perisse:2013fp"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset space \hfill{}
@@ -550,7 +550,7 @@ status collapsed
 
 
 \begin_inset Graphics
-	filename mb_divisions.png
+	filename figs/mb_divisions.png
 	scale 25
 
 \end_inset
@@ -924,7 +924,7 @@ status open
 
 
 \begin_inset Graphics
-	filename Fig_starved_vs_fed.ai
+	filename figs/Fig_starved_vs_fed.eps
 	scale 30
 
 \end_inset
@@ -2460,7 +2460,7 @@ status open
 
 
 \begin_inset Graphics
-	filename Fig2_methods1.ai
+	filename figs/Fig2_methods1.eps
 	scale 78
 
 \end_inset
@@ -2554,7 +2554,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /Volumes/DeusEx/Dropbox/1 DPhil Vogels Lab/Ipython Vogels Project/Part1_Simple_Spiking_Odor_network/results/fig2_methods2.eps
+	filename figs_code/fig2_methods2.eps
 
 \end_inset
 
@@ -2751,7 +2751,7 @@ status open
 
 
 \begin_inset Graphics
-	filename odor_space2.eps
+	filename figs/odor_space2.eps
 	scale 65
 
 \end_inset
@@ -2914,7 +2914,7 @@ status open
 
 
 \begin_inset Graphics
-	filename /Volumes/DeusEx/Dropbox/1 DPhil Vogels Lab/Ipython Vogels Project/Part1_Simple_Spiking_Odor_network/results/fig3_before_after.eps
+	filename figs_code/fig3_before_after_aversive_appetitive.eps
 	scale 90
 
 \end_inset
@@ -2993,67 +2993,6 @@ A) During appetitive training the dopamine modulated STDP rule targets the
 placement H
 wide false
 sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Graphics
-	filename Figure20 - before_after.ai
-	scale 60
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\lang british
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-text to list of figures
-\end_layout
-
-\end_inset
-
-MBON coding space after learning 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-A) The odour is shown before and after appetitive learning in valence coding
- space which shifts its position towards the green area of the valence space
- B) The odour is shown before and after aversive learning in the valence
- coding space which shifts its position towards the red area of the valence
- space.
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\lang british
-\begin_inset Float figure
-placement H
-wide false
-sideways false
 status collapsed
 
 \begin_layout Plain Layout
@@ -3062,14 +3001,14 @@ status collapsed
 
 
 \begin_inset Graphics
-	filename /Volumes/DeusEx/Dropbox/1 DPhil Vogels Lab/Ipython Vogels Project/Part1_Simple_Spiking_Odor_network/fig3_app.eps
+	filename figs_code/fig3_app.eps
 	scale 60
 
 \end_inset
 
 
 \begin_inset Graphics
-	filename /Volumes/DeusEx/Dropbox/1 DPhil Vogels Lab/Ipython Vogels Project/Part1_Simple_Spiking_Odor_network/fig3_aversive.eps
+	filename figs_code/fig3_aversive.eps
 	scale 60
 
 \end_inset
@@ -3130,7 +3069,7 @@ status open
 
 
 \begin_inset Graphics
-	filename currents_before_after_aversive.ai
+	filename figs_code/Fig_currents_before_after_aversive.eps
 	scale 120
 
 \end_inset
@@ -3240,73 +3179,8 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
-
-\lang british
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status collapsed
-
-\begin_layout Plain Layout
-text to list of figures
-\end_layout
-
-\end_inset
-
- Aversive learning with and without MVP2 - 
-\begin_inset Formula $M4\beta'$
-\end_inset
-
-inhibition
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Graphics
-	filename Fig_with_without.eps
-	scale 65
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-To see the functional implications of lateral inhibition we pair an odour
- with aversive reinforcement and perform the simulation for 1 second with
- and without inhibition.
- A) Odour retrieval test without lateral inhibition In order: i) Response
- of approach neuron to odour after aversive training vs naive response ii)
- Response of retreat neuron to odour after aversive training vs.
- naive response iii) Odour before and after training in coding space B)
- Odour retrieval test with lateral inhibition.
- i) Response of retreat neuron to odor after aversive training vs.
- naive ii) Response of approach neuron after aversive training vs.
- naive; iii) Odor projected in valence space before and after training 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\lang british
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename /Volumes/DeusEx/Dropbox/1 DPhil Vogels Lab/Ipython Vogels Project/Part1_Simple_Spiking_Odor_network/fig4_lateral_hz.eps
+	filename figs_code/fig4_lateral_hz.eps
 	scale 65
 
 \end_inset
@@ -3316,7 +3190,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /Volumes/DeusEx/Dropbox/1 DPhil Vogels Lab/Ipython Vogels Project/Part1_Simple_Spiking_Odor_network/fig4_lateral_coding.eps
+	filename figs_code/fig4_lateral_coding.eps
 	scale 70
 
 \end_inset
@@ -3328,7 +3202,7 @@ status open
 
 
 \begin_inset Graphics
-	filename /Volumes/DeusEx/Dropbox/1 DPhil Vogels Lab/Ipython Vogels Project/Part1_Simple_Spiking_Odor_network/fig4_nolateral_coding.eps
+	filename figs_code/fig4_nolateral_coding.eps
 	scale 70
 
 \end_inset
@@ -3450,7 +3324,7 @@ status open
 
 -
 \begin_inset Graphics
-	filename Figure7_overlap2_new.eps
+	filename figs/Figure7_overlap2_new.eps
 	scale 60
 
 \end_inset
@@ -3555,7 +3429,7 @@ status open
 
 
 \begin_inset Graphics
-	filename Final_figure_trained_twice.eps
+	filename figs/Final_figure_trained_twice.eps
 	scale 60
 
 \end_inset
@@ -3853,7 +3727,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Timeline.pdf
+	filename figs/Timeline.pdf
 	scale 70
 
 \end_inset

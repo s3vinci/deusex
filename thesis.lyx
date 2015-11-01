@@ -214,7 +214,7 @@ setstretch{1.0}
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "chapter1/chapter1_figures.lyx"
+filename "chapter1/chapter1_new.lyx"
 
 \end_inset
 
@@ -229,7 +229,7 @@ filename "chapter1/chapter1_figures.lyx"
  
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "references/bao,final_references,/Volumes/DeusEx/Dropbox/1 DPhil Vogels Lab/Ipython Vogels Project/Part1_Simple_Spiking_Odor_network/figures_paper/sex3_ref,papers"
+bibfiles "papers"
 options "authordate1"
 
 \end_inset

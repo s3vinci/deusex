@@ -169,11 +169,11 @@ key "Luo:2010fb,Wessnitzer:2011dj"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figure1_circuit_a4_vers2.ai
+	filename figs/Figure1_circuit_a4_vers2.eps
 	scale 70
 
 \end_inset
@@ -542,7 +542,7 @@ key "Perisse:2013fp"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset space \hfill{}
@@ -550,7 +550,7 @@ status collapsed
 
 
 \begin_inset Graphics
-	filename mb_divisions.png
+	filename figs/mb_divisions.png
 	scale 25
 
 \end_inset
@@ -924,7 +924,7 @@ status open
 
 
 \begin_inset Graphics
-	filename Fig_starved_vs_fed.ai
+	filename figs/Fig_starved_vs_fed.eps
 	scale 30
 
 \end_inset
@@ -2554,7 +2554,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /Volumes/DeusEx/Dropbox/1 DPhil Vogels Lab/Ipython Vogels Project/Part1_Simple_Spiking_Odor_network/results/fig2_methods2.eps
+	filename figs_code/fig2_methods2.eps
 
 \end_inset
 
@@ -2751,7 +2751,7 @@ status open
 
 
 \begin_inset Graphics
-	filename odor_space2.eps
+	filename figs/odor_space2.eps
 	scale 65
 
 \end_inset
@@ -2914,7 +2914,7 @@ status open
 
 
 \begin_inset Graphics
-	filename /Volumes/DeusEx/Dropbox/1 DPhil Vogels Lab/Ipython Vogels Project/Part1_Simple_Spiking_Odor_network/results/fig3_before_after.eps
+	filename figs_code/fig3_before_after_aversive_appetitive.eps
 	scale 90
 
 \end_inset
@@ -3001,7 +3001,14 @@ status open
 
 
 \begin_inset Graphics
-	filename Figure20 - before_after.ai
+	filename figs_code/fig3_app.eps
+	scale 60
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename figs_code/fig3_aversive.eps
 	scale 60
 
 \end_inset
@@ -3130,7 +3137,7 @@ status open
 
 
 \begin_inset Graphics
-	filename currents_before_after_aversive.ai
+	filename figs_code/Fig_currents_before_after_aversive.eps
 	scale 120
 
 \end_inset
@@ -3306,7 +3313,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /Volumes/DeusEx/Dropbox/1 DPhil Vogels Lab/Ipython Vogels Project/Part1_Simple_Spiking_Odor_network/fig4_lateral_hz.eps
+	filename figs_code/fig4_lateral_hz.eps
 	scale 65
 
 \end_inset
@@ -3316,7 +3323,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /Volumes/DeusEx/Dropbox/1 DPhil Vogels Lab/Ipython Vogels Project/Part1_Simple_Spiking_Odor_network/fig4_lateral_coding.eps
+	filename figs_code/fig4_lateral_coding.eps
 	scale 70
 
 \end_inset
@@ -3328,7 +3335,7 @@ status open
 
 
 \begin_inset Graphics
-	filename /Volumes/DeusEx/Dropbox/1 DPhil Vogels Lab/Ipython Vogels Project/Part1_Simple_Spiking_Odor_network/fig4_nolateral_coding.eps
+	filename figs_code/fig4_nolateral_coding.eps
 	scale 70
 
 \end_inset
@@ -3450,7 +3457,7 @@ status open
 
 -
 \begin_inset Graphics
-	filename Figure7_overlap2_new.eps
+	filename figs/Figure7_overlap2_new.eps
 	scale 60
 
 \end_inset
@@ -3555,7 +3562,7 @@ status open
 
 
 \begin_inset Graphics
-	filename Final_figure_trained_twice.eps
+	filename figs/Final_figure_trained_twice.eps
 	scale 60
 
 \end_inset
@@ -3853,7 +3860,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Timeline.pdf
+	filename figs/Timeline.pdf
 	scale 70
 
 \end_inset

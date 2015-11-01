@@ -1,4 +1,4 @@
-#1
+#123
 __author__ = 'neurotheory'
 from scipy.signal import lfilter
 from IPython import display
@@ -10,6 +10,7 @@ import time
 from valence_plots import *
 #from constants_longt import * d
 
+# plot stdp function
 def plot_stdp_exp():
     size = [6,4]
     fontsize = 14
@@ -28,7 +29,7 @@ def plot_stdp_exp():
     ax.xaxis.set_ticks_position('bottom')
     plt.gcf().subplots_adjust(bottom=.4,left=.2)
     plt.ylabel('Change %', fontsize=13)
-    plt.xlabel('Time (ms)', fontsize=13)
+    plt.xlabel('Time (s)', fontsize=13)
     plt.yticks([-50,0,50])
     plt.xticks([-20,-15,-10,-5,0,5,10,15,20])
     plt.ylim([-60,60])
@@ -276,7 +277,7 @@ def plot_weights_before_after(data1, data2,  xlabel =  '#KC - M4 synapse',ylabel
     if SAVE_PLOTS:
         plt.savefig('results/' + filename+'.eps')
         plt.savefig('results/' + filename+'.png')
-def plot_avg_before_after(gex,ginh , xlabel = ' Time (ms)',ylabel='ylabel',
+def plot_avg_before_after(gex,ginh , xlabel = ' Time (s)',ylabel='ylabel',
                           title='Title',color='r',
                           filename=' hzbeforeafter', size=(10, 5),fontsize= 10,lw=2,
                           marker=''):
@@ -297,7 +298,7 @@ def plot_avg_before_after(gex,ginh , xlabel = ' Time (ms)',ylabel='ylabel',
     plt.savefig('results/' + filename)
     plt.savefig('results/' + filename+'.eps')
     plt.savefig('results/' + filename+'.png')
-def plot_nice(data, xlabel = 'Time (ms)',ylabel='ylabel',title='Title',color='b', dims = 1, filename='nice',
+def plot_nice(data, xlabel = 'Time (s)',ylabel='ylabel',title='Title',color='b', dims = 1, filename='nice',
               size=(10,5), fontsize= 10,lw=2,marker='',xticks=[],yticks=[]):
     fig = plt.figure()
     ax = plt.gca()
@@ -321,7 +322,7 @@ def plot_nice(data, xlabel = 'Time (ms)',ylabel='ylabel',title='Title',color='b'
     if ARTISTIC_PLOT:
         ax.spines['bottom'].set_color('none')
     if len (xticks ) > 0 and not ARTISTIC_PLOT:
-        plt.xticks(xticks)
+        plt.xticks(xticks,xlabels)
     #if len (yticks ) > 0:
     plt.yticks(yticks)
     if ARTISTIC_PLOT:
@@ -355,7 +356,7 @@ def raster_kc(event_times_list, color='k', filename = 'kc_raster',ilename='curre
     ax.spines['right'].set_color('none')
     plt.xlim([0,10000])
     plt.ylabel('KC #No', fontsize=fontsize)
-    plt.xlabel('Time (ms)',fontsize=fontsize)
+    plt.xlabel('Time (s)',fontsize=fontsize)
     plt.gcf().subplots_adjust(bottom=.4,left=.2)
     if ARTISTIC_PLOT:
         ax.spines['bottom'].set_color('none')
@@ -369,7 +370,7 @@ def raster_kc(event_times_list, color='k', filename = 'kc_raster',ilename='curre
 
 
 
-def plot_currents(gex,ginh , xlabel = 'Time (ms)',ylabel='ylabel',title='Title',color='r',
+def plot_currents(gex,ginh , xlabel = 'Time (s)',ylabel='ylabel',title='Title',color='r',
                   filename='currents',
                   size=(10, 5),fontsize= 10,lw=2,marker='',ylims=(-5,5),xticks=[],yticks=[]):
     fig = plt.figure()
@@ -391,7 +392,7 @@ def plot_currents(gex,ginh , xlabel = 'Time (ms)',ylabel='ylabel',title='Title',
     ax.yaxis.set_ticks_position('left')
     ax.xaxis.set_ticks_position('bottom')
     if len (xticks ) > 0:
-        plt.xticks(xticks)
+        plt.xticks(xticks,xlabels)
     if len (yticks ) > 0:
         plt.yticks(yticks)
     if ARTISTIC_PLOT:
@@ -776,9 +777,9 @@ def raster_plot_save(all_kc, filename='kc_raster'):
     plt.ylim(2.5, len(all_kc) + 2.5)
     plt.xlim(0, 20000)
     plt.ylabel('KC index', fontsize=13)
-    plt.xlabel('Time (ms)', fontsize=13)
+    plt.xlabel('Time (s)', fontsize=13)
     # lt.ylabel('Membrance Potential (mV)',fontsize=13)
-    # plt.xlabel('Time (ms)',fontsize=13)
+    # plt.xlabel('Time (s)',fontsize=13)
     plt.tick_params(labelsize=13)
     ax.spines['top'].set_color('none')
     ax.spines['right'].set_color('none')
@@ -1104,13 +1105,14 @@ def fig3_sim_mvp_m4(w_mvp=[] , w_m4 = [] ,stdp_on =1):
     #plot figures
     fontsize = 10
     fontsize_l = 15
-    lw = 2
-    xticks = [0,1000, 2000, 3000, 4000,5000, 6000, 7000, 8000,9000, 10000]
+    lw = 0.5
+    xlabels=[0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1 ]
+    xticks = [ 0, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000 ]
     yticks =[-60,-40,-20,0]
     size = (14,12)
     fig = plt.figure()
     fig.set_size_inches(size)
-    lw = 2
+    lw = 0.5
     plt.subplot(421)
     ax = plt.gca()
     #ax.annotate('A', xy=(0, 1), xytext=(-70, 0), va='top', xycoords='axes fraction', textcoords='offset
@@ -1118,13 +1120,13 @@ def fig3_sim_mvp_m4(w_mvp=[] , w_m4 = [] ,stdp_on =1):
     fig.set_size_inches(size)
     plt.plot(mtr_da_v,linewidth = lw, color ='green' ,marker='')
     plt.ylabel('V (mV)',fontsize=fontsize)
-    plt.xlabel('Time (mS)',fontsize=fontsize)
+    plt.xlabel('Time (s)',fontsize=fontsize)
     plt.tick_params(labelsize=fontsize)
     ax.spines['top'].set_color('none')
     ax.spines['right'].set_color('none')
     ax.yaxis.set_ticks_position('left')
     ax.xaxis.set_ticks_position('bottom')
-    plt.xticks(xticks)
+    plt.xticks(xticks,xlabels)
     plt.yticks(yticks)
 
     plt.subplot(423)
@@ -1133,8 +1135,8 @@ def fig3_sim_mvp_m4(w_mvp=[] , w_m4 = [] ,stdp_on =1):
     plt.plot(mtr_w_m4[:, [1,8]],linewidth = lw, color ='darkblue' ,marker='')
     #plt.gcf().subplots_adjust(bottom=.4,left=.2)
     plt.ylabel('w (aU)',fontsize=fontsize_l)
-    plt.xlabel('Time (mS)',fontsize=fontsize_l)
-    plt.xticks(xticks)
+    plt.xlabel('Time (s)',fontsize=fontsize_l)
+    plt.xticks(xticks,xlabels)
     plt.tick_params(labelsize=fontsize)
     plt.ylim([0,1])
     ax.spines['top'].set_color('none')
@@ -1149,13 +1151,13 @@ def fig3_sim_mvp_m4(w_mvp=[] , w_m4 = [] ,stdp_on =1):
                                                                               'Learning' )
     plt.legend( loc='upper right', numpoints = 1,frameon=False, fontsize=fontsize )
     plt.ylabel('Firing Rate (Hz)',fontsize=fontsize_l)
-    plt.xlabel('Time (mS)',fontsize=fontsize_l)
+    plt.xlabel('Time (s)',fontsize=fontsize_l)
     plt.tick_params(labelsize=fontsize)
     ax.spines['top'].set_color('none')
     ax.spines['right'].set_color('none')
     ax.yaxis.set_ticks_position('left')
     ax.xaxis.set_ticks_position('bottom')
-    plt.xticks(xticks)
+    plt.xticks(xticks,xlabels)
 
     plt.subplot(427)
     ax = plt.gca()
@@ -1164,14 +1166,14 @@ def fig3_sim_mvp_m4(w_mvp=[] , w_m4 = [] ,stdp_on =1):
                                                                                    'Learning' )
     plt.legend( loc='upper right', numpoints = 1,frameon=False, fontsize=fontsize )
     plt.ylabel('Firing Rate (Hz)',fontsize=fontsize_l)
-    plt.xlabel('Time (mS)',fontsize=fontsize_l)
+    plt.xlabel('Time (s)',fontsize=fontsize_l)
     plt.tick_params(labelsize=fontsize)
     ax.spines['top'].set_color('none')
     ax.spines['right'].set_color('none')
     ax.yaxis.set_ticks_position('left')
     ax.xaxis.set_ticks_position('bottom')
     plt.subplots_adjust(wspace=0.5, hspace = 0.5)
-    plt.xticks(xticks)
+    plt.xticks(xticks,xlabels)
 
     plt.subplot(422)
     ax = plt.gca()
@@ -1181,28 +1183,28 @@ def fig3_sim_mvp_m4(w_mvp=[] , w_m4 = [] ,stdp_on =1):
     fig.set_size_inches(size)
     plt.plot(mtr_da_v,linewidth = lw, color ='red' ,marker='')
     plt.ylabel('V (mV)',fontsize=fontsize+3)
-    plt.xlabel('Time (mS)',fontsize=fontsize)
+    plt.xlabel('Time (s)',fontsize=fontsize)
     plt.tick_params(labelsize=fontsize)
     ax.spines['top'].set_color('none')
     ax.spines['right'].set_color('none')
     ax.yaxis.set_ticks_position('left')
     ax.xaxis.set_ticks_position('bottom')
-    plt.xticks(xticks)
+    plt.xticks(xticks,xlabels)
     plt.yticks(yticks)
-    plt.xticks(xticks)
+    plt.xticks(xticks,xlabels)
 
     plt.subplot(424)
     ax = plt.gca()
     plt.plot(mtr_w_mvp[:, [1,8]],linewidth = lw, color ='purple' ,marker='')
     plt.ylabel('w (aU)',fontsize=fontsize_l)
-    plt.xlabel('Time (mS)',fontsize=fontsize_l)
+    plt.xlabel('Time (s)',fontsize=fontsize_l)
     plt.tick_params(labelsize=fontsize)
     ax.spines['top'].set_color('none')
     ax.spines['right'].set_color('none')
     ax.yaxis.set_ticks_position('left')
     ax.xaxis.set_ticks_position('bottom')
     plt.ylim([0,1])
-    plt.xticks(xticks)
+    plt.xticks(xticks,xlabels)
 
     plt.subplot(426)
     ax = plt.gca()
@@ -1210,14 +1212,14 @@ def fig3_sim_mvp_m4(w_mvp=[] , w_m4 = [] ,stdp_on =1):
     plt.plot(rates_after_mvp_ave ,linewidth = lw,marker='', color ='red',label='MVP After Aversive '                                                                       'Learning' )
     plt.legend( loc='upper right', numpoints = 1,frameon=False, fontsize=fontsize )
     plt.ylabel('Firing Rate (Hz)',fontsize=fontsize_l)
-    plt.xlabel('Time (mS)',fontsize=fontsize_l)
+    plt.xlabel('Time (s)',fontsize=fontsize_l)
     plt.tick_params(labelsize=fontsize)
     ax.spines['top'].set_color('none')
     ax.spines['right'].set_color('none')
     ax.yaxis.set_ticks_position('left')
     ax.xaxis.set_ticks_position('bottom')
     plt.subplots_adjust(wspace=0.5, hspace = 0.5)
-    plt.xticks(xticks)
+    plt.xticks(xticks,xlabels)
 
     plt.subplot(428)
     ax = plt.gca()
@@ -1226,16 +1228,17 @@ def fig3_sim_mvp_m4(w_mvp=[] , w_m4 = [] ,stdp_on =1):
     plt.plot(rates_after_m4_aversive,linewidth = lw,marker='', color ='red',label='M4 After Aversive '                                                                               'Learning' )
     plt.legend( loc='upper right', numpoints = 1,frameon=False, fontsize=fontsize )
     plt.ylabel('Firing Rate (Hz)',fontsize=fontsize_l)
-    plt.xlabel('Time (mS)',fontsize=fontsize_l)
+    plt.xlabel('Time (s)',fontsize=fontsize_l)
     plt.tick_params(labelsize=fontsize)
     ax.spines['top'].set_color('none')
     ax.spines['right'].set_color('none')
     ax.yaxis.set_ticks_position('left')
     ax.xaxis.set_ticks_position('bottom')
     plt.subplots_adjust(wspace=0.5, hspace = 0.5)
-    plt.xticks(xticks)
+    plt.xticks(xticks,xlabels)
 
-    plt.savefig('results/fig3_before_after.eps',bbox_inches='tight', transparent="True", pad_inches=0)
+    plt.savefig('fig3_before_after_appetitive_aversive.eps',bbox_inches='tight', transparent="True",
+                pad_inches=0)
 
     print 'M4 spiked '+ str( m4_spikes)
     print 'MVP spiked ' + str( mvp_spikes)
@@ -1419,21 +1422,21 @@ def fig3_tuned(w_mvp=[] , w_m4 = [] ,stdp_on =1):
     rates_after_m4_aversive = rates_after_m4_aversive / n_trials / 10
     #fontsize = 9
     #fontsize_l = 12
-    #lw = 2
-    #xticks = [0,1000, 2000, 3000, 4000,5000, 6000, 7000, 8000,9000, 10000]
+    #lw = 0.5
+    #xticks = [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1
     #yticks =[-60,-40,-20,0]
     #size = (12,6)
     plt.ioff()
     fontsize = 7
     fontsize_l = 9
-    lw = 2
-    xticks = [0,1000, 2000, 3000, 4000,5000, 6000, 7000, 8000,9000, 10000]
+    xlabels=[0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1 ]
+    xticks = [ 0, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000 ]
     yticks =[-60,-40,-20,0]
     size = (8,8)
 
     fig = plt.figure()
     fig.set_size_inches(size)
-    lw = 2
+    lw = 0.5
     plt.subplot(421)
     ax = plt.gca()
     #ax.annotate('A', xy=(0, 1), xytext=(-70, 0), va='top', xycoords='axes fraction', textcoords='offset
@@ -1449,13 +1452,13 @@ def fig3_tuned(w_mvp=[] , w_m4 = [] ,stdp_on =1):
     fig.set_size_inches(size)
     plt.plot(mtr_da_v,linewidth = lw, color ='green' ,marker='')
     plt.ylabel('V (mV)',fontsize=fontsize_l,fontname="Times New Roman")
-    plt.xlabel('Time (mS)',fontsize=fontsize_l,fontname="Times New Roman")
+    plt.xlabel('Time (s)',fontsize=fontsize_l,fontname="Times New Roman")
     plt.tick_params(labelsize=fontsize)
     ax.spines['top'].set_color('none')
     ax.spines['right'].set_color('none')
     ax.yaxis.set_ticks_position('left')
     ax.xaxis.set_ticks_position('bottom')
-    plt.xticks(xticks,fontname="Times New Roman")
+    plt.xticks(xticks, xlabels, fontname="Times New Roman")
     plt.yticks(yticks,fontname="Times New Roman")
 
 
@@ -1465,8 +1468,8 @@ def fig3_tuned(w_mvp=[] , w_m4 = [] ,stdp_on =1):
     plt.plot(mtr_w_m4[:, [1,8]],linewidth = lw, color ='darkblue' ,marker='')
     #plt.gcf().subplots_adjust(bottom=.4,left=.2)
     plt.ylabel('w (aU)',fontsize=fontsize_l,fontname="Times New Roman")
-    plt.xlabel('Time (mS)',fontsize=fontsize_l,fontname="Times New Roman")
-    plt.xticks(xticks,fontname="Times New Roman")
+    plt.xlabel('Time (s)',fontsize=fontsize_l,fontname="Times New Roman")
+    plt.xticks(xticks, xlabels , fontname="Times New Roman")
     plt.yticks([0,0.2,0.4,0.6,0.8,1],fontname="Times New Roman")
     plt.tick_params(labelsize=fontsize)
     plt.ylim([0,1])
@@ -1482,13 +1485,13 @@ def fig3_tuned(w_mvp=[] , w_m4 = [] ,stdp_on =1):
                                                                               'Learning' )
     plt.legend( loc='upper right', numpoints = 1,frameon=False, fontsize=fontsize )
     plt.ylabel('Firing Rate (Hz)',fontsize=fontsize_l,fontname="Times New Roman")
-    plt.xlabel('Time (mS)',fontsize=fontsize_l,fontname="Times New Roman")
+    plt.xlabel('Time (s)',fontsize=fontsize_l,fontname="Times New Roman")
     plt.tick_params(labelsize=fontsize)
     ax.spines['top'].set_color('none')
     ax.spines['right'].set_color('none')
     ax.yaxis.set_ticks_position('left')
     ax.xaxis.set_ticks_position('bottom')
-    plt.xticks(xticks)
+    plt.xticks(xticks,xlabels)
     plt.ylim([0,50])
 
     plt.subplot(427)
@@ -1499,14 +1502,14 @@ def fig3_tuned(w_mvp=[] , w_m4 = [] ,stdp_on =1):
                                                                                    'Learning' )
     plt.legend( loc='upper right', numpoints = 1,frameon=False, fontsize=fontsize )
     plt.ylabel('Firing Rate (Hz)',fontsize=fontsize_l,fontname="Times New Roman")
-    plt.xlabel('Time (mS)',fontsize=fontsize_l,fontname="Times New Roman")
+    plt.xlabel('Time (s)',fontsize=fontsize_l,fontname="Times New Roman")
     plt.tick_params(labelsize=fontsize)
     ax.spines['top'].set_color('none')
     ax.spines['right'].set_color('none')
     ax.yaxis.set_ticks_position('left')
     ax.xaxis.set_ticks_position('bottom')
     plt.subplots_adjust(wspace=0.5, hspace = 0.5)
-    plt.xticks(xticks,fontname="Times New Roman")
+    plt.xticks(xticks,xlabels,fontname="Times New Roman")
     plt.ylim([0,50])
 
     plt.subplot(422)
@@ -1526,27 +1529,27 @@ def fig3_tuned(w_mvp=[] , w_m4 = [] ,stdp_on =1):
     fig.set_size_inches(size)
     plt.plot(mtr_da_v,linewidth = lw, color ='red' ,marker='')
     plt.ylabel('V (mV)',fontsize=fontsize_l,fontname="Times New Roman")
-    plt.xlabel('Time (mS)',fontsize=fontsize_l,fontname="Times New Roman")
+    plt.xlabel('Time (s)',fontsize=fontsize_l,fontname="Times New Roman")
     plt.tick_params(labelsize=fontsize)
     ax.spines['top'].set_color('none')
     ax.spines['right'].set_color('none')
     ax.yaxis.set_ticks_position('left')
     ax.xaxis.set_ticks_position('bottom')
-    plt.xticks(xticks,fontname="Times New Roman")
-    plt.yticks(yticks,fontname="Times New Roman")
+    plt.xticks(xticks,xlabels,fontname="Times New Roman")
+    plt.yticks(yticks,xlabels, fontname="Times New Roman")
 
     plt.subplot(424)
     ax = plt.gca()
     plt.plot(mtr_w_mvp[:, [1,8]],linewidth = lw, color ='purple' ,marker='')
     plt.ylabel('w (aU)',fontsize=fontsize_l,fontname="Times New Roman")
-    plt.xlabel('Time (mS)',fontsize=fontsize_l,fontname="Times New Roman")
+    plt.xlabel('Time (s)',fontsize=fontsize_l,fontname="Times New Roman")
     plt.tick_params(labelsize=fontsize)
     ax.spines['top'].set_color('none')
     ax.spines['right'].set_color('none')
     ax.yaxis.set_ticks_position('left')
     ax.xaxis.set_ticks_position('bottom')
     plt.ylim([0,1])
-    plt.xticks(xticks,fontname="Times New Roman")
+    plt.xticks(xticks,xlabels, fontname="Times New Roman")
 
     plt.subplot(426)
     fig.set_size_inches(size)
@@ -1556,14 +1559,14 @@ def fig3_tuned(w_mvp=[] , w_m4 = [] ,stdp_on =1):
     plt.plot(rates_after_mvp_ave ,linewidth = lw,marker='', color ='red',label='MVP After Aversive '                                                                       'Learning' )
     plt.legend( loc='upper right', numpoints = 1,frameon=False, fontsize=fontsize )
     plt.ylabel('Firing Rate (Hz)',fontsize=fontsize_l,fontname="Times New Roman")
-    plt.xlabel('Time (mS)',fontsize=fontsize_l,fontname="Times New Roman")
+    plt.xlabel('Time (s)',fontsize=fontsize_l,fontname="Times New Roman")
     plt.tick_params(labelsize=fontsize)
     ax.spines['top'].set_color('none')
     ax.spines['right'].set_color('none')
     ax.yaxis.set_ticks_position('left')
     ax.xaxis.set_ticks_position('bottom')
     plt.subplots_adjust(wspace=0.5, hspace = 0.5)
-    plt.xticks(xticks,fontname="Times New Roman")
+    plt.xticks(xticks,xlabels, fontname="Times New Roman")
     plt.yticks([0,10,20,30,40,50],fontname="Times New Roman")
     plt.ylim([0,50])
 
@@ -1574,14 +1577,14 @@ def fig3_tuned(w_mvp=[] , w_m4 = [] ,stdp_on =1):
     plt.plot(rates_after_m4_aversive,linewidth = lw,marker='', color ='red',label='M4 After Aversive '                                                                               'Learning' )
     plt.legend( loc='upper right', numpoints = 1,frameon=False, fontsize=fontsize )
     plt.ylabel('Firing Rate (Hz)',fontsize=fontsize_l)
-    plt.xlabel('Time (mS)',fontsize=fontsize_l)
+    plt.xlabel('Time (s)',fontsize=fontsize_l)
     plt.tick_params(labelsize=fontsize)
     ax.spines['top'].set_color('none')
     ax.spines['right'].set_color('none')
     ax.yaxis.set_ticks_position('left')
     ax.xaxis.set_ticks_position('bottom')
     plt.subplots_adjust(wspace=0.3, hspace = 0.5)
-    plt.xticks(xticks,fontname="Times New Roman")
+    plt.xticks(xticks,xlabels, fontname="Times New Roman")
     plt.yticks([0,10,20,30,40,50],fontname="Times New Roman")
     plt.ylim([0,50])
     plt.savefig('fig3_before_after_aversive_appetitive.eps',bbox_inches='tight', transparent="True",
@@ -1777,45 +1780,46 @@ def fig4_aversive_twice(w_mvp=[] , w_m4 = [] ,stdp_on =1):
     #plot figures
     fontsize = 9
     fontsize_l = 12
-    lw = 2
-    xticks = [0,1000, 2000, 3000, 4000,5000, 6000, 7000, 8000,9000, 10000]
+    lw = 0.5
+    xlabels=[0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1 ]
+    xticks = [ 0, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000 ]
     yticks =[-60,-40,-20,0]
     size = (12,6)
     fig = plt.figure()
     fig.set_size_inches(size)
-    lw = 2
+    lw = 0.5
     plt.subplot(221)
     ax = plt.gca()
     ax.annotate('A. Aversive Training with lateral inhibition', xy=(0, 1), xytext=(0, 50), va='top', xycoords='axes fraction', textcoords='offset points',fontsize=12)
     plt.plot(rates_before_mvp, linewidth = lw, marker='', color ='purple',label='MVP Before' )
-    plt.plot(rates_after_mvp_app,linewidth = lw,marker='', color ='green',label='MVP After' )
+    plt.plot(rates_after_mvp_app,linewidth = lw,marker='', color ='red',label='MVP After' )
     plt.legend( loc='upper right', numpoints = 1,frameon=False, fontsize=fontsize )
     plt.ylabel('Firing Rate (Hz)',fontsize=fontsize_l)
-    plt.xlabel('Time (mS)',fontsize=fontsize_l)
+    plt.xlabel('Time (s)',fontsize=fontsize_l)
     plt.tick_params(labelsize=fontsize)
     ax.spines['top'].set_color('none')
     ax.spines['right'].set_color('none')
     ax.yaxis.set_ticks_position('left')
     ax.xaxis.set_ticks_position('bottom')
     plt.subplots_adjust(wspace=0.5, hspace = 0.5)
-    plt.xticks(xticks)
+    plt.xticks(xticks,xlabels)
     plt.ylim([0,50])
 
     plt.subplot(223)
     ax = plt.gca()
     rates_after_m4[300:1500] =  rates_after_m4[300:1500] - 10
     plt.plot(rates_before_m4,linewidth = lw, marker='', color ='darkblue',label='M4 Before' )
-    plt.plot(rates_after_m4 ,linewidth = lw,marker='', color ='green',label='M4 After' )
+    plt.plot(rates_after_m4 ,linewidth = lw,marker='', color ='red',label='M4 After' )
     plt.legend( loc='upper right', numpoints = 1,frameon=False, fontsize=fontsize )
     plt.ylabel('Firing Rate (Hz)',fontsize=fontsize_l)
-    plt.xlabel('Time (mS)',fontsize=fontsize_l)
+    plt.xlabel('Time (s)',fontsize=fontsize_l)
     plt.tick_params(labelsize=fontsize)
     ax.spines['top'].set_color('none')
     ax.spines['right'].set_color('none')
     ax.yaxis.set_ticks_position('left')
     ax.xaxis.set_ticks_position('bottom')
     plt.subplots_adjust(wspace=0.5, hspace = 0.5)
-    plt.xticks(xticks)
+    plt.xticks(xticks,xlabels)
     plt.ylim([0,50])
 
     plt.subplot(222)
@@ -1824,34 +1828,33 @@ def fig4_aversive_twice(w_mvp=[] , w_m4 = [] ,stdp_on =1):
 
     rates_after_mvp_ave[300:1500] =  rates_after_mvp_ave[300:1500] - 10
     plt.plot(rates_before_mvp,linewidth = lw, marker='', color ='purple',label='MVP Before' )
-    plt.plot(rates_after_mvp_ave ,linewidth = lw,marker='', color ='red',label='MVP After'                                                                       'Learning' )
+    plt.plot(rates_after_mvp_ave ,linewidth = lw,marker='', color ='red',label='MVP After')
     plt.legend( loc='upper right', numpoints = 1,frameon=False, fontsize=fontsize )
     plt.ylabel('Firing Rate (Hz)',fontsize=fontsize_l)
-    plt.xlabel('Time (mS)',fontsize=fontsize_l)
+    plt.xlabel('Time (s)',fontsize=fontsize_l)
     plt.tick_params(labelsize=fontsize)
     ax.spines['top'].set_color('none')
     ax.spines['right'].set_color('none')
     ax.yaxis.set_ticks_position('left')
     ax.xaxis.set_ticks_position('bottom')
     plt.subplots_adjust(wspace=0.5, hspace = 0.5)
-    plt.xticks(xticks)
+    plt.xticks(xticks,xlabels)
     plt.ylim([0,50])
 
     plt.subplot(224)
     ax = plt.gca()
     plt.plot(rates_before_m4,linewidth = lw, marker='', color ='darkblue',label='M4 Before' )
-    rates_after_m4_aversive[300:1500] =  rates_after_m4_aversive[300:1500] + 10
-    plt.plot(rates_after_m4_aversive,linewidth = lw,marker='', color ='red',label='M4 After'                                                                               'Learning' )
-    plt.legend( loc='upper right', numpoints = 1,frameon=False, fontsize=fontsize )
+    #rates_after_m4_aversive[300:1500] =  rates_after_m4_aversive[300:1500] + 10
+    plt.plot(rates_after_m4_aversive,linewidth = lw,marker='', color ='red',label='M4 After')
     plt.ylabel('Firing Rate (Hz)',fontsize=fontsize_l)
-    plt.xlabel('Time (mS)',fontsize=fontsize_l)
+    plt.xlabel('Time (s)',fontsize=fontsize_l)
     plt.tick_params(labelsize=fontsize)
     ax.spines['top'].set_color('none')
     ax.spines['right'].set_color('none')
     ax.yaxis.set_ticks_position('left')
     ax.xaxis.set_ticks_position('bottom')
     plt.subplots_adjust(wspace=0.5, hspace = 0.5)
-    plt.xticks(xticks)
+    plt.xticks(xticks,xlabels)
     plt.ylim([0,50])
 
     plt.savefig('fig4_lateral_hz.eps',bbox_inches='tight', transparent="True", pad_inches=0)
