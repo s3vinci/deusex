@@ -32,18 +32,17 @@ mathematically the growing behavioural data, make predictions and
 testable hypotheses. We shell discuss these computational methods
 in Section 1.5.
 
-\selectlanguage{british}%
 \begin{figure}[H]
-\selectlanguage{english}%
-\includegraphics[scale=0.6]{chapter1/Figure1_circuit_a4_vers2}
+%
+\includegraphics[scale=0.6]{chapter1/Figure1_circuit_a4_vers2.eps}
 
-\selectlanguage{british}%
-\caption[The olfactory reinforcement learning circuit and experiment]{\selectlanguage{english}%
-Reinforcement learning experiment and circuit \selectlanguage{english}%
+
+\caption[The olfactory reinforcement learning circuit and experiment]{%
+Reinforcement learning experiment and circuit %
 }
 
+%The fly has a concept of neutrality
 
-\selectlanguage{english}%
 A) In the learning paradigm the fly is shown a simple odour which
 is called the CS- (conditional stimulus without reinforcement) for
 2 minutes in the appetitive training protocol. Afterwards, a fly is
@@ -77,11 +76,8 @@ retreat behaviour while MVP2 MBONs biases towards approach behaviour.
 The MVP2 MBON in this figure is show inhibiting the M4 retreat neuron
 (David Owald - personal correspondence). The DPM neuron decreases
 its activity during hunger and disinhibits KCs which are known to
-innervate the MVP2 Approach neuron. \selectlanguage{english}%
+innervate the MVP2 Approach neuron. %
 \end{figure}
-
-
-\selectlanguage{english}%
 
 \section{Odour representation become concentration invariant in the early
 stages of olfactory processes }
@@ -90,6 +86,7 @@ Flies detect odours using approximately 1,200 olfactory receptor neurons
 (ORNs) housed in their antennae. The tuning of each ORN is determined
 by a single odorant receptor gene, which controls whether the ORN
 is broadly or narrowly tuned to odours (\citealp{Hallem:2006iu}).
+
 Axons from the ORN expressing the same receptor always converge on
 the same glomerulus. Their activity is picked up by inhibitory and
 excitatory projection neurons which perform normalization of the odour
@@ -145,9 +142,6 @@ APL releases GABA at a rate proportional to its level of depolarization
 and appears to play a role normalizing KC responses to odours and
 maintaining sparseness (\citealp{Lin:2014io}). 
 
-
-
-
 \subsection{Anatomical subdivisions of the MB have unique role in odour processing }
 
 The dendrites of the KCs form the calyx of the MB, and their axons
@@ -163,27 +157,22 @@ subdivisions of KCs, that the $\alpha\beta$ neurons are needed during
 retrieval of aversive and appetitive memory whereas $\alpha'\beta'$
 core neurons, when blocked only affect appetitive memory (\citealp{Perisse:2013fp}). 
 
-\selectlanguage{british}%
-\begin{figure}[H]
-\selectlanguage{english}%
-i\includegraphics[scale=0.25]{chapter1/mb_divisions}
 
-\selectlanguage{british}%
-\caption[Anatomy of the Mushroom BodyAnatomy of the Mushroom Body]{\selectlanguage{english}%
- \selectlanguage{english}%
+\begin{figure}[H]
+%
+i\includegraphics[scale=0.25]{chapter1/mb_divisions.png}
+
+
+\caption[Anatomy of the Mushroom BodyAnatomy of the Mushroom Body]{%
+ %
 }
 
-
-\selectlanguage{english}%
 Gross anatomy of the mushroom body (reproduced from \citealp{Aso:2014bh}).
 Dashed lines reflect the compartments defined by MBON dendrites. The
 $\alpha$ and $\gamma$ lobes are each divided into three compartments,
 and $\beta$ and $\beta'$ are each divided into two, $\gamma$ is
-divided into five compartments.\selectlanguage{english}%
+divided into five compartments.%
 \end{figure}
-
-
-\selectlanguage{english}%
 
 \subsection{MBONs guide approach and retreat behaviours}
 
@@ -221,7 +210,7 @@ to the naive response after appetitive learning and increased after
 aversive learning ($Fig.2B$). Furthermore, optogenetic activation
 of the $M4\beta'$ neurons changed a neutral behaviour into avoidance
 behaviour and blocking the neuron converted a naive odour approach
-into odour retreat in naïve flies (flies that had an innate repulsion
+into odour retreat in naï¿½ve flies (flies that had an innate repulsion
 to the odour without learning,\citealp{Owald:2015cn}). Converseley,
 the MVP2 MBON neuron is known to promote approach behaviour. Interestingly,
 there is evidence that the $MVP2$ ``approach'' MBON inhibits the
@@ -288,20 +277,17 @@ after it has been starved which biases the behaviour towards approach
 another layer of complexity to the valence learning model which is
 state modulation of behaviour.
 
-\selectlanguage{british}%
-\begin{figure}[H]
-\selectlanguage{english}%
-\includegraphics[scale=0.2]{chapter1/Fig_starved_vs_fed}
 
-\selectlanguage{british}%
-\caption[Activity in the MVP2 neuron starved and fed]{\selectlanguage{english}%
+\begin{figure}[H]
+%
+\includegraphics[scale=0.2]{chapter1/Fig_starved_vs_fed.eps}
+
+
+\caption[Activity in the MVP2 neuron starved and fed]{%
  Normalized calcium imaging response of the MVP2 neuron to four different
-odours, averaged from ten flies. \selectlanguage{english}%
+odours, averaged from ten flies. %
 }
 \end{figure}
-
-
-\selectlanguage{english}%
 
 \subsection{DA modulated learning changes odour drive to KC-MBON synapses}
 
@@ -383,7 +369,6 @@ where we tested a plasticity learning rule that depresses the synapse
 in the presence of dopamine. The three main neuron types that we modelled
 heere are Kenyon Cells, MBONs and DAs.
 
-
 \section{Connectivity}
 
 We used experimental data that traces the connectivity between KCs
@@ -396,8 +381,7 @@ KCs and MBONs, thus we make the assumption that the weights between
 KCs and MBONs have uniform random strengths at start. By doing that
 we found that we needed to tune our synapses with strengths between
 0 nS and 2 Ns to achieve MBON firing rates of 50 Hz, whic is in accordance
-with experimental evidence \citep{Hige:2015er}. 
-
+with experimental evidence \citep{Hige:2015er}.
 
 \section{MB Kenyon Cells model}
 
@@ -452,8 +436,6 @@ MBON Inhibitory conductance  & -80 mV  & $E_{inh}$\tabularnewline
 
 \caption{MBON neuron parameters}
 \end{table}
-
-
 
 \section{LIF Neuron Model}
 
@@ -590,11 +572,12 @@ In our learning paradigm dopamine gates synaptic learning which is
 to say synaptic change can not occurr in the absence of dopamine.
 We have used a general model of dopamine gated STDP learning (\citealp{Izhikevich:2004ul}). 
 
-\selectlanguage{british}%
+
 \begin{figure}[H]
-\selectlanguage{english}%
-\includegraphics[scale=0.7]{chapter1/Figure3_learningrule}\foreignlanguage{british}{\caption[Learning components at the KC-MBON synapse]{\selectlanguage{english}%
-Learning components at the KC-MBON synapse\selectlanguage{english}%
+%
+\includegraphics[scale=0.7]{chapter1/Figure3_learningrule.eps} {\caption[Learning
+components at the KC-MBON synapse]{%
+Learning components at the KC-MBON synapse%
 }
 }
 
@@ -618,11 +601,8 @@ if extracellular dopamine are present during the critical time window
 (middle) the maximal synaptic conductance w is modified (iii) The
 synaptic weight, here written as w depresses as there have been pre-post
 spike pairs and dopamine is present in the system%
-\end{minipage}\selectlanguage{english}%
+\end{minipage}%
 \end{figure}
-
-
-\selectlanguage{english}%
 
 \section{Odour exposure protocol}
 
@@ -664,27 +644,22 @@ odour with appetitive reinforcement decreased their drive towards
 retreat while, training with aversive reinforcement both decreased
 their drive towards approach and increased their retreat drive.
 
-\selectlanguage{british}%
-\begin{figure}[H]
-\selectlanguage{english}%
-\includegraphics[scale=0.65]{chapter1/odor_space2}
 
-\selectlanguage{british}%
-\caption[MBON coding space before learning]{\selectlanguage{english}%
-MBON coding space before learning \selectlanguage{english}%
+\begin{figure}[H]
+%
+\includegraphics[scale=0.65]{chapter1/odor_space2.eps}
+
+
+\caption[MBON coding space before learning]{%
+MBON coding space before learning %
 }
 
-
-\selectlanguage{english}%
 This figure shows the odor valence space coded by MBONs. The white
 line represents a perfect balance between retreat and approach drive
 corresponding to both MBONs populations firing at the same rate. The
 green area corresponds to a higher drive towards approach. Conversely,
-the red area corresponds to a higher retreat drive from MBONs. \selectlanguage{english}%
+the red area corresponds to a higher retreat drive from MBONs. %
 \end{figure}
-
-
-\selectlanguage{english}%
 
 \section{Bi-directional change in firing rate can occur when dopamine depresses
 the KC-MBON synapses}
@@ -722,11 +697,12 @@ training moves along a single axis. This can be explained due to the
 fact that aversive learning both decreases drive to the approach MBON
 and increase drive to the retreat MBON. 
 
-\selectlanguage{british}%
+
 \begin{figure}[H]
-\selectlanguage{english}%
-\includegraphics[scale=0.7]{chapter1/Figures3_clean2}\foreignlanguage{british}{\caption[text to list of figures]{\selectlanguage{english}%
- Responses of the MVP2 (approach) and$M4\beta'$(retreat) neurons\selectlanguage{english}%
+%
+\includegraphics[scale=0.7]{chapter1/Figures3_clean2.eps} {\caption[text to list of
+figures]{%
+ Responses of the MVP2 (approach) and$M4\beta'$(retreat) neurons%
 }
 }
 
@@ -744,14 +720,15 @@ reinforcement ii) A selection of 'weights' are shown that represent
 the efficacies of KC-MVP synapses (purple). iii) Before (black) and
 after aversive learning (light blue) $M4\beta'$ response to the odour
 iv) Before(black) and after (purple) aversive learning response of
-the MVP2 neuron.\selectlanguage{english}%
+the MVP2 neuron.%
 \end{figure}
 
 
 \begin{figure}[H]
-\selectlanguage{english}%
-\includegraphics[scale=0.6]{\string"chapter1/Figure20 - before_after\string"}\foreignlanguage{british}{\caption[text to list of figures]{\selectlanguage{english}%
-MBON coding space after learning \selectlanguage{english}%
+%
+\includegraphics[scale=0.6]{\string"chapter1/Figure20 - before_after
+.eps\string"} {\caption[text to list of figures]{%
+MBON coding space after learning %
 }
 }
 
@@ -759,27 +736,23 @@ A) The odour is shown before and after appetitive learning in valence
 coding space which shifts its position towards the green area of the
 valence space B) The odour is shown before and after aversive learning
 in the valence coding space which shifts its position towards the
-red area of the valence space. \selectlanguage{english}%
+red area of the valence space. %
 \end{figure}
 
 
 \begin{figure}[H]
-\selectlanguage{english}%
-\includegraphics[scale=1.2]{chapter1/currents_before_after_aversive}\foreignlanguage{british}{\caption[text to list of figures]{\selectlanguage{english}%
-\selectlanguage{english}%
+%
+\includegraphics[scale=1.2]{chapter1/currents_before_after_aversive
+.eps} {\caption[text to list of figures]{%
+%
 }
 }
 
 A) Synaptic current of the $M4\beta'$ neuron before aversive training
-B) Synaptic currents of the $M4\beta'$ neuron after aversive training\selectlanguage{english}%
+B) Synaptic currents of the $M4\beta'$ neuron after aversive training%
 \end{figure}
 
-
-\selectlanguage{english}%
-
 \section{Inhibition between MBONs can enhance odour discrimination}
-
-
 
 To show that the MVP2-M4 inhibitory synapse is necessary and that
 it enhances dsicrimination we performed the simulation in two conditions,
@@ -791,11 +764,12 @@ that the inhibitory synapse between the MBON increases discriminability
 by pushing the representation depeer into the reretreat area ($Fig.3.5B$
 bottom). 
 
-\selectlanguage{british}%
+
 \begin{figure}[H]
-\selectlanguage{english}
-\includegraphics[scale=0.7]{chapter1/Figure7_lateral_inihibition_vers2}\foreignlanguage{british}{\caption[text to list of figures]{\selectlanguage{english}%
- Aversive learning with and without MVP2 - $M4\beta'$inhibition\selectlanguage{english}%
+
+\includegraphics[scale=0.7]{chapter1/Figure7_lateral_inihibition_vers2
+.eps} {\caption[text to list of figures]{%
+ Aversive learning with and without MVP2 - $M4\beta'$inhibition%
 }
 }
 
@@ -809,11 +783,8 @@ before and after training in coding space B) Odour retrieval test
 with lateral inhibition. i) Response of retreat neuron to odor after
 aversive training vs. naive ii) Response of approach neuron after
 aversive training vs. naive; iii) Odor projected in valence space
-before and after training \selectlanguage{english}%
+before and after training %
 \end{figure}
-
-
-\selectlanguage{english}%
 
 \section{Trained odour can change the valence of a similar untrained odour }
 
@@ -830,13 +801,11 @@ response in the MBON code space we observed that both odours have
 changed the valence to that of the trained odour ($Fig.\,3.6$) which
 has been shown experimentally to occurr (\citealp{Campbell:2013fba}). 
 
-
-
-\selectlanguage{british}%
 \begin{figure}[H]
-\selectlanguage{english}%
-\includegraphics[scale=0.6]{chapter1/Figure7_overlap2_new.ai}\foreignlanguage{british}{\caption[text to list of figures]{\selectlanguage{english}%
-Training odours with overlapping representations\selectlanguage{english}%
+%
+\includegraphics[scale=0.6]{chapter1/Figure7_overlap2_new.eps} {\caption[text to list
+ of figures]{%
+Training odours with overlapping representations%
 }
 }We have trained an odour with an appetitive (A) / aversive (B) stimulus
 (o1) and we visualize both the trained odour and a similar odour with
@@ -844,11 +813,8 @@ overlap after o1 is trained. A) Bot the trained (o1) odour and the
 untrained (o2) have moved position in the valence space towards the
 approach area B) Both the trained (o1) and the untrained (o2) odour
 with overlapping representation havee moved their position in the
-valence space to the aversive area\selectlanguage{english}%
+valence space to the aversive area%
 \end{figure}
-
-
-\selectlanguage{english}%
 
 \section{Aversive memories are more stable than appetitive memories}
 
@@ -873,11 +839,12 @@ simulation we observed that his result depends on whether appetitive
 and aversive learning decrease the firing rate of the targeted neuron
 in an equal manner. 
 
-\selectlanguage{british}%
+
 \begin{figure}[H]
-\selectlanguage{english}%
-\includegraphics[scale=0.45]{chapter1/Final_figure_trained_twice.ai}\foreignlanguage{british}{\caption[text to list of figures]{\selectlanguage{english}%
- Training an odour with two types of reinforcement successively\selectlanguage{english}%
+%
+\includegraphics[scale=0.45]{chapter1/Final_figure_trained_twice.eps} {\caption[text
+to list of figures]{%
+ Training an odour with two types of reinforcement successively%
 }
 }
 
@@ -887,11 +854,8 @@ a position in the approach area of the MBON valence space. After aversive
 training the odour moved into the area of the retreat valence space
 B) We have now trained an odour with an aversive reinforcement first
 and afterwards with appetitive reinforcement. The odour remained in
-the retreat area of the valence space after the two types of training. \selectlanguage{english}%
+the retreat area of the valence space after the two types of training. %
 \end{figure}
-
-
-\selectlanguage{english}%
 
 \chapter{Discussion and future work}
 
@@ -1002,13 +966,11 @@ the MB changes in response to motivational state. A candidate neuron
 mechanism might be APL state dependent inhibition, which is a neuron
 that inhibits the entire population of KCs (\citealp{Lin:2014io}). 
 
-
 \chapter{Timeline}
 
-\selectlanguage{british}%
 \begin{figure}[H]
-\selectlanguage{english}%
-\includegraphics[scale=0.7]{chapter1/Timeline}\selectlanguage{english}%
+%
+\includegraphics[scale=0.7]{chapter1/Timeline.pdf}%
 \end{figure}
-\selectlanguage{english}%
+%
 

@@ -164,6 +164,10 @@ key "Luo:2010fb,Wessnitzer:2011dj"
 
 \begin_layout Standard
 
+\end_layout
+
+\begin_layout Standard
+
 \lang british
 \begin_inset Float figure
 placement H
@@ -194,6 +198,13 @@ The olfactory reinforcement learning circuit and experiment
 \end_inset
 
 Reinforcement learning experiment and circuit 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:circuit"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -266,7 +277,7 @@ key "Waddell:2013fu"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Plain Layout
@@ -289,8 +300,7 @@ D) The valence learning olfactory circuit is made of a group of approximately
 \end_layout
 
 \begin_layout Section
-Odour representation become concentration invariant in the early stages
- of olfactory processes 
+Odour responses are normalized in the early stages of odour processing 
 \end_layout
 
 \begin_layout Standard
@@ -2460,7 +2470,7 @@ status open
 
 
 \begin_inset Graphics
-	filename Fig2_methods1.eps
+	filename figs/Fig2_methods1.eps
 	scale 78
 
 \end_inset
@@ -3061,74 +3071,6 @@ A) The odour is shown before and after appetitive learning in valence coding
 placement H
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Graphics
-	filename /Volumes/DeusEx/Dropbox/1 DPhil Vogels Lab/Ipython Vogels Project/Part1_Simple_Spiking_Odor_network/fig3_app.eps
-	scale 60
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename /Volumes/DeusEx/Dropbox/1 DPhil Vogels Lab/Ipython Vogels Project/Part1_Simple_Spiking_Odor_network/fig3_aversive.eps
-	scale 60
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\lang british
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-text to list of figures
-\end_layout
-
-\end_inset
-
-MBON coding space after learning 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-A) The odour is shown before and after appetitive learning in valence coding
- space which shifts its position towards the green area of the valence space
- B) The odour is shown before and after aversive learning in the valence
- coding space which shifts its position towards the red area of the valence
- space.
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\lang british
-\begin_inset Float figure
-placement H
-wide false
-sideways false
 status open
 
 \begin_layout Plain Layout
@@ -3137,7 +3079,7 @@ status open
 
 
 \begin_inset Graphics
-	filename figs_code/Fig_currents_before_after_aversive.eps
+	filename figs_code/fig5_before_after_aversive.eps
 	scale 120
 
 \end_inset
@@ -3245,71 +3187,6 @@ placement H
 wide false
 sideways false
 status collapsed
-
-\begin_layout Plain Layout
-
-\lang british
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status collapsed
-
-\begin_layout Plain Layout
-text to list of figures
-\end_layout
-
-\end_inset
-
- Aversive learning with and without MVP2 - 
-\begin_inset Formula $M4\beta'$
-\end_inset
-
-inhibition
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Fig_with_without.eps
-	scale 65
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-To see the functional implications of lateral inhibition we pair an odour
- with aversive reinforcement and perform the simulation for 1 second with
- and without inhibition.
- A) Odour retrieval test without lateral inhibition In order: i) Response
- of approach neuron to odour after aversive training vs naive response ii)
- Response of retreat neuron to odour after aversive training vs.
- naive response iii) Odour before and after training in coding space B)
- Odour retrieval test with lateral inhibition.
- i) Response of retreat neuron to odor after aversive training vs.
- naive ii) Response of approach neuron after aversive training vs.
- naive; iii) Odor projected in valence space before and after training 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\lang british
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics

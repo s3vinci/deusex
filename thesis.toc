@@ -1,52 +1,14 @@
 \select@language {english}
 \contentsline {chapter}{\numberline {1}Introduction}{1}
-\select@language {british}
-\select@language {english}
-\select@language {british}
-\select@language {english}
-\select@language {british}
-\select@language {english}
-\select@language {british}
-\select@language {english}
-\select@language {english}
-\select@language {english}
-\select@language {british}
-\select@language {english}
-\select@language {english}
-\select@language {english}
 \contentsline {section}{\numberline {1.1}Odour representation become concentration invariant in the early stages of olfactory processes }{2}
 \contentsline {section}{\numberline {1.2}The MB is the centre for associative learning in the fruit fly}{3}
 \contentsline {subsection}{\numberline {1.2.1}Similar odours have overlapping representations in the MB}{3}
 \contentsline {subsection}{\numberline {1.2.2}The MB recurrent activity is critical for stabilizing odour memories}{4}
 \contentsline {subsection}{\numberline {1.2.3}Anatomical subdivisions of the MB have unique role in odour processing }{4}
-\select@language {british}
-\select@language {english}
-\select@language {british}
-\select@language {english}
-\select@language {british}
-\select@language {english}
-\select@language {british}
-\select@language {english}
-\select@language {english}
-\select@language {english}
-\select@language {british}
-\select@language {english}
-\select@language {english}
-\select@language {english}
 \contentsline {subsection}{\numberline {1.2.4}MBONs guide approach and retreat behaviours}{5}
 \contentsline {section}{\numberline {1.3}DAs convey reward and punishment signals}{6}
 \contentsline {subsection}{\numberline {1.3.1}DAs convey reward and punishment signals in different areas of the mushroom body }{7}
 \contentsline {subsection}{\numberline {1.3.2}DA state control}{7}
-\select@language {british}
-\select@language {english}
-\select@language {british}
-\select@language {english}
-\select@language {british}
-\select@language {english}
-\select@language {english}
-\select@language {english}
-\select@language {british}
-\select@language {english}
 \contentsline {subsection}{\numberline {1.3.3}DA modulated learning changes odour drive to KC-MBON synapses}{8}
 \contentsline {section}{\numberline {1.4}Spike Timing Dependent Plasticity (STDP) as a candidate for plasticity at the KC-MBON synapses}{8}
 \contentsline {section}{\numberline {1.5}Previous modelling attempts of olfactory learning}{9}
@@ -57,104 +19,18 @@
 \contentsline {section}{\numberline {2.3}MBONs model}{12}
 \contentsline {section}{\numberline {2.4}LIF Neuron Model}{13}
 \contentsline {section}{\numberline {2.5}The three-factor plasticity learning rule}{14}
-\select@language {british}
-\select@language {english}
-\select@language {british}
-\select@language {english}
-\select@language {english}
-\select@language {english}
-\select@language {english}
-\select@language {british}
-\select@language {english}
-\select@language {english}
 \contentsline {section}{\numberline {2.6}Odour exposure protocol}{16}
 \contentsline {chapter}{\numberline {3}Results}{17}
 \contentsline {section}{\numberline {3.1}Odours have a balance of approach and retreat drive before training}{17}
-\select@language {british}
-\select@language {english}
-\select@language {british}
-\select@language {english}
-\select@language {british}
-\select@language {english}
-\select@language {british}
-\select@language {english}
-\select@language {english}
-\select@language {english}
-\select@language {british}
-\select@language {english}
-\select@language {english}
-\select@language {english}
 \contentsline {section}{\numberline {3.2}Bi-directional change in firing rate can occur when dopamine depresses the KC-MBON synapses}{18}
-\select@language {british}
-\select@language {english}
-\select@language {british}
-\select@language {english}
-\select@language {english}
-\select@language {english}
-\select@language {english}
-\select@language {british}
-\select@language {english}
-\select@language {english}
-\select@language {british}
-\select@language {english}
-\select@language {english}
-\select@language {english}
-\select@language {english}
-\select@language {british}
-\select@language {english}
-\select@language {english}
-\select@language {british}
-\select@language {english}
-\select@language {english}
-\select@language {english}
-\select@language {english}
-\select@language {british}
-\select@language {english}
-\select@language {english}
-\contentsline {section}{\numberline {3.3}Inhibition between MBONs can enhance odour discrimination}{19}
-\select@language {british}
-\select@language {english}
-\select@language {british}
-\select@language {english}
-\select@language {english}
-\select@language {english}
-\select@language {english}
-\select@language {british}
-\select@language {english}
-\select@language {english}
+\contentsline {section}{\numberline {3.3}Inhibition between MBONs can enhance odour discrimination}{20}
 \contentsline {section}{\numberline {3.4}Trained odour can change the valence of a similar untrained odour }{20}
-\select@language {british}
-\select@language {english}
-\select@language {british}
-\select@language {english}
-\select@language {english}
-\select@language {english}
-\select@language {english}
-\select@language {british}
-\select@language {english}
-\select@language {english}
 \contentsline {section}{\numberline {3.5}Aversive memories are more stable than appetitive memories}{21}
-\select@language {british}
-\select@language {english}
-\select@language {british}
-\select@language {english}
-\select@language {english}
-\select@language {english}
-\select@language {english}
-\select@language {british}
-\select@language {english}
-\select@language {english}
-\contentsline {chapter}{\numberline {4}Discussion and future work}{22}
-\contentsline {section}{\numberline {4.1}Conclusions from preliminary results}{22}
-\contentsline {section}{\numberline {4.2}Future work}{23}
-\contentsline {subsection}{\numberline {4.2.1}Learning over larger periods of time}{23}
-\contentsline {subsection}{\numberline {4.2.2}Second order conditioning}{24}
-\contentsline {subsection}{\numberline {4.2.3}Implementing the MBON - DA feedback loop}{24}
-\contentsline {subsection}{\numberline {4.2.4}State dependent memory retrieval }{24}
-\contentsline {chapter}{\numberline {5}Timeline}{26}
-\select@language {british}
-\select@language {english}
-\select@language {british}
-\select@language {english}
-\select@language {english}
-\select@language {english}
+\contentsline {chapter}{\numberline {4}Discussion and future work}{23}
+\contentsline {section}{\numberline {4.1}Conclusions from preliminary results}{23}
+\contentsline {section}{\numberline {4.2}Future work}{24}
+\contentsline {subsection}{\numberline {4.2.1}Learning over larger periods of time}{24}
+\contentsline {subsection}{\numberline {4.2.2}Second order conditioning}{25}
+\contentsline {subsection}{\numberline {4.2.3}Implementing the MBON - DA feedback loop}{25}
+\contentsline {subsection}{\numberline {4.2.4}State dependent memory retrieval }{25}
+\contentsline {chapter}{\numberline {5}Timeline}{27}

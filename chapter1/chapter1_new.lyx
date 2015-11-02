@@ -122,7 +122,19 @@ key "Waddell:2010iw"
 \end_layout
 
 \begin_layout Standard
-When exposed to most odours, the response behaviour of flies depends on
+A previous experimental study 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Knaden:2012ch"
+
+\end_inset
+
+ has studied odour preference before learning and has shown that for 110
+ different odours, flies were attracted to 60, repulsed by 4 and found 44
+ to be of neutral valence.
+ In the experiment flies were given the choice between one of 110 odours
+ and an empty chamber and the preference was monitored for a group of flies.
+ When exposed to most odours, the response behaviour of flies depends on
  experience: if an odour is associated with a sweetened reward (CS+, or
  conditioned stimulus) and another odour offers no reward (CS- or unconditioned
  stimulus) the flies will show a preference for the rewarded odour in a
@@ -144,7 +156,11 @@ key "Perisse:2013fpa"
 \end_inset
 
  bottom panel).
- Understanding how these memories of odours are generated and how they affect
+ 
+\end_layout
+
+\begin_layout Standard
+Understanding how these memories of odours are generated and how they affect
  behaviour is an area of current research.
  Researchers are also beginning to understand how innate and learned olfactory
  behaviours interact with each other.
@@ -194,6 +210,13 @@ The olfactory reinforcement learning circuit and experiment
 \end_inset
 
 Reinforcement learning experiment and circuit 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:circuit"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -266,7 +289,7 @@ key "Waddell:2013fu"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Plain Layout
@@ -289,8 +312,7 @@ D) The valence learning olfactory circuit is made of a group of approximately
 \end_layout
 
 \begin_layout Section
-Odour representation become concentration invariant in the early stages
- of olfactory processes 
+Odour responses are normalized in the early stages of odour processing 
 \end_layout
 
 \begin_layout Standard
@@ -2993,7 +3015,7 @@ A) During appetitive training the dopamine modulated STDP rule targets the
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset space \hfill{}
@@ -3069,7 +3091,7 @@ status open
 
 
 \begin_inset Graphics
-	filename figs_code/Fig_currents_before_after_aversive.eps
+	filename figs_code/fig5_before_after_aversive.eps
 	scale 120
 
 \end_inset

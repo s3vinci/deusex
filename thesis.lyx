@@ -30,8 +30,6 @@
 \usepackage{fullpage}
 \usepackage{caption}
 \captionsetup{font={small,stretch=0.8}}
-
-
 %\usepackage{babel}
 \end_preamble
 \use_default_options false
@@ -58,7 +56,16 @@
 \float_placement H
 \paperfontsize 12
 \spacing single
-\use_hyperref false
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
 \papersize default
 \use_geometry false
 \use_package amsmath 2
@@ -226,10 +233,13 @@ filename "chapter1/chapter1_new.lyx"
 \newcommand{\bibname}{References}
 \end_inset
 
- 
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "papers"
+bibfiles "chapter1/citations_all"
 options "authordate1"
 
 \end_inset

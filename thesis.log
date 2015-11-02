@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.9.15)  1 NOV 2015 18:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.9.15)  1 NOV 2015 19:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -369,210 +369,241 @@ ut line 29.
 
 ]
 
-! LaTeX Error: File `chapter1/Figure1_circuit_a4_vers2' not found.
+LaTeX Warning: File `chapter1/Figure1_circuit_a4_vers2.eps' not found on input 
+line 37.
 
-See the LaTeX manual or LaTeX Companion for explanation.
+Package epstopdf Info: Source file: <chapter1/Figure1_circuit_a4_vers2.eps>
+(epstopdf)             Output file: <chapter1/Figure1_circuit_a4_vers2-eps-conv
+erted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=chapter1/Figure1_circuit_a
+4_vers2-eps-converted-to.pdf chapter1/Figure1_circuit_a4_vers2.eps>
+(epstopdf)             \includegraphics on input line 37.
+Package epstopdf Info: Output file is already uptodate.
+
+! Package pdftex.def Error: File `chapter1/Figure1_circuit_a4_vers2-eps-convert
+ed-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.38 ...le=0.6]{chapter1/Figure1_circuit_a4_vers2}
+l.37 ....6]{chapter1/Figure1_circuit_a4_vers2.eps}
                                                   
 ? 
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 37.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
 
 Package natbib Warning: Citation `Perisse:2013fpa' on page 2 undefined on input
- line 64.
+ line 63.
 
 
 Package natbib Warning: Citation `Waddell:2013fu' on page 2 undefined on input 
-line 70.
+line 69.
 
 
 Package natbib Warning: Citation `Hallem:2006iu' on page 2 undefined on input l
-ine 92.
+ine 88.
 
 
 Package natbib Warning: Citation `Luo:2010fb' on page 2 undefined on input line
- 96.
+ 93.
 
 
 Package natbib Warning: Citation `deBelle:1994iu' on page 2 undefined on input 
-line 102.
+line 99.
 
 [2]
 
 Package natbib Warning: Citation `Turner:2008eo' on page 3 undefined on input l
-ine 108.
+ine 105.
 
 
 Package natbib Warning: Citation `Heisenberg:2009bu' on page 3 undefined on inp
-ut line 111.
+ut line 108.
 
 
 Package natbib Warning: Citation `Honegger:2011ja' on page 3 undefined on input
- line 116.
+ line 113.
 
 
 Package natbib Warning: Citation `Campbell:2013fb' on page 3 undefined on input
- line 122.
+ line 119.
 
 
 Package natbib Warning: Citation `Campbell:2013fb' on page 3 undefined on input
- line 130.
+ line 127.
 
 [3]
 
 Package natbib Warning: Citation `Lin:2014io' on page 4 undefined on input line
- 139.
+ 136.
 
 
 Package natbib Warning: Citation `Lin:2014io' on page 4 undefined on input line
- 146.
+ 143.
 
 
 Package natbib Warning: Citation `Krashes:2007fh' on page 4 undefined on input 
-line 156.
+line 150.
 
 
 Package natbib Warning: Citation `Perisse:2013fp' on page 4 undefined on input 
-line 164.
+line 158.
 
 
-! LaTeX Error: File `chapter1/mb_divisions' not found.
+LaTeX Warning: File `chapter1/mb_divisions.png' not found on input line 163.
 
-See the LaTeX manual or LaTeX Companion for explanation.
+
+! Package pdftex.def Error: File `chapter1/mb_divisions.png' not found.
+
+See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.169 ...aphics[scale=0.25]{chapter1/mb_divisions}
+l.163 ...cs[scale=0.25]{chapter1/mb_divisions.png}
                                                   
 ? 
 
 Package natbib Warning: Citation `Aso:2014bh' on page 4 undefined on input line
- 178.
+ 170.
 
 [4]
 
 Package natbib Warning: Citation `Aso:2014bh' on page 5 undefined on input line
- 214.
+ 203.
+
+
+Package natbib Warning: Citation `Owald:2015cn' on page 5 undefined on input li
+ne 203.
 
 
 Package natbib Warning: Citation `Owald:2015cn' on page 5 undefined on input li
 ne 214.
 
-
-Package natbib Warning: Citation `Owald:2015cn' on page 5 undefined on input li
-ne 225.
-
 [5]
 
 Package natbib Warning: Citation `Burke:2012jt' on page 6 undefined on input li
-ne 244.
+ne 233.
 
 
 Package natbib Warning: Citation `Owald:2015cn' on page 6 undefined on input li
-ne 254.
+ne 243.
 
 
 Package natbib Warning: Citation `Perisse:2013fp' on page 6 undefined on input 
-line 262.
+line 251.
 
 
 Package natbib Warning: Citation `Lin:2014ix' on page 6 undefined on input line
- 269.
+ 258.
 
 [6]
 
 Package natbib Warning: Citation `Lin:2014ix' on page 7 undefined on input line
- 279.
+ 268.
 
 
-! LaTeX Error: File `chapter1/Fig_starved_vs_fed' not found.
+LaTeX Warning: File `chapter1/Fig_starved_vs_fed.eps' not found on input line 2
+83.
 
-See the LaTeX manual or LaTeX Companion for explanation.
+Package epstopdf Info: Source file: <chapter1/Fig_starved_vs_fed.eps>
+(epstopdf)             Output file: <chapter1/Fig_starved_vs_fed-eps-converted-
+to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=chapter1/Fig_starved_vs_fe
+d-eps-converted-to.pdf chapter1/Fig_starved_vs_fed.eps>
+(epstopdf)             \includegraphics on input line 283.
+Package epstopdf Info: Output file is already uptodate.
+
+! Package pdftex.def Error: File `chapter1/Fig_starved_vs_fed-eps-converted-to.
+pdf' not found.
+
+See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.294 ...s[scale=0.2]{chapter1/Fig_starved_vs_fed}
+l.283 ...ale=0.2]{chapter1/Fig_starved_vs_fed.eps}
                                                   
 ? 
 
 Package natbib Warning: Citation `Owald:2015cn' on page 7 undefined on input li
-ne 310.
+ne 296.
 
 
 Package natbib Warning: Citation `Aso:2014bh' on page 7 undefined on input line
- 313.
+ 299.
 
 
 Package natbib Warning: Citation `Owald:2015cn' on page 7 undefined on input li
-ne 316.
+ne 302.
 
 [7]
 
 Package natbib Warning: Citation `Bi:1998ve' on page 8 undefined on input line 
-329.
+315.
 
 
 Package natbib Warning: Citation `Bi:1998ve' on page 8 undefined on input line 
-332.
+318.
 
 
 Package natbib Warning: Citation `Pawlak:2010cn' on page 8 undefined on input l
-ine 335.
+ine 321.
 
 
 Package natbib Warning: Citation `Waddell:2013fu' on page 8 undefined on input 
-line 339.
+line 325.
 
 [8]
 
 Package natbib Warning: Citation `Hige:2015er' on page 9 undefined on input lin
-e 350.
+e 336.
 
 
 Package natbib Warning: Citation `Owald:2015cn' on page 9 undefined on input li
-ne 350.
+ne 336.
 
 
 Package natbib Warning: Citation `Aso:2014bh' on page 9 undefined on input line
- 350.
+ 336.
 
 
 Package natbib Warning: Citation `Wessnitzer:2011dj' on page 9 undefined on inp
-ut line 353.
+ut line 339.
 
 
 Package natbib Warning: Citation `Giurfa:2003dd' on page 9 undefined on input l
-ine 361.
+ine 347.
 
 
 Package natbib Warning: Citation `Wessnitzer:2011dj' on page 9 undefined on inp
-ut line 366.
+ut line 352.
 
 [9] [10]
 Chapter 2.
 
 Package natbib Warning: Citation `Aso:2014bh' on page 11 undefined on input lin
-e 390.
+e 375.
 
 
 Package natbib Warning: Citation `Hige:2015er' on page 11 undefined on input li
-ne 399.
+ne 384.
 
 
 Package natbib Warning: Citation `Turner:2008eo' on page 11 undefined on input 
-line 408.
+line 392.
 
 [11
 
 ]
 
 Package natbib Warning: Citation `Turner:2008eo' on page 12 undefined on input 
-line 416.
+line 400.
 
 
 Package natbib Warning: Citation `Hige:2015er' on page 12 undefined on input li
-ne 432.
+ne 416.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -580,205 +611,285 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [12]
 
 Package natbib Warning: Citation `Cassenaer:2007go' on page 13 undefined on inp
-ut line 499.
+ut line 481.
 
 [13] [14]
 
 Package natbib Warning: Citation `Abbott:2000gg' on page 15 undefined on input 
-line 588.
+line 570.
 
 
 Package natbib Warning: Citation `Izhikevich:2004ul' on page 15 undefined on in
-put line 591.
+put line 573.
 
 
-! LaTeX Error: File `chapter1/Figure3_learningrule' not found.
+LaTeX Warning: File `chapter1/Figure3_learningrule.eps' not found on input line
+ 578.
 
-See the LaTeX manual or LaTeX Companion for explanation.
+Package epstopdf Info: Source file: <chapter1/Figure3_learningrule.eps>
+(epstopdf)             Output file: <chapter1/Figure3_learningrule-eps-converte
+d-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=chapter1/Figure3_learningr
+ule-eps-converted-to.pdf chapter1/Figure3_learningrule.eps>
+(epstopdf)             \includegraphics on input line 578.
+Package epstopdf Info: Output file is already uptodate.
+
+! Package pdftex.def Error: File `chapter1/Figure3_learningrule-eps-converted-t
+o.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.596 ...scale=0.7]{chapter1/Figure3_learningrule}
-                                                  \foreignlanguage{british}{...
-
+l.578 ...e=0.7]{chapter1/Figure3_learningrule.eps}
+                                                   {\caption[Learning
 ? 
 
 Package natbib Warning: Citation `Cassenaer:2007go' on page 15 undefined on inp
-ut line 603.
+ut line 586.
 
 [15]
 
 Package natbib Warning: Citation `Turner:2008eo' on page 16 undefined on input 
-line 632.
+line 612.
 
 [16]
 Chapter 3.
 
-! LaTeX Error: File `chapter1/odor_space2' not found.
+LaTeX Warning: File `chapter1/odor_space2.eps' not found on input line 650.
 
-See the LaTeX manual or LaTeX Companion for explanation.
+Package epstopdf Info: Source file: <chapter1/odor_space2.eps>
+(epstopdf)             Output file: <chapter1/odor_space2-eps-converted-to.pdf>
+
+(epstopdf)             Command: <repstopdf --outfile=chapter1/odor_space2-eps-c
+onverted-to.pdf chapter1/odor_space2.eps>
+(epstopdf)             \includegraphics on input line 650.
+Package epstopdf Info: Output file is already uptodate.
+
+! Package pdftex.def Error: File `chapter1/odor_space2-eps-converted-to.pdf' no
+t found.
+
+See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.670 ...raphics[scale=0.65]{chapter1/odor_space2}
+l.650 ...ics[scale=0.65]{chapter1/odor_space2.eps}
                                                   
 ? 
 [17
 
 ] [18]
 
-! LaTeX Error: File `chapter1/Figures3_clean2' not found.
+LaTeX Warning: File `chapter1/Figures3_clean2.eps' not found on input line 703.
 
-See the LaTeX manual or LaTeX Companion for explanation.
+
+Package epstopdf Info: Source file: <chapter1/Figures3_clean2.eps>
+(epstopdf)             Output file: <chapter1/Figures3_clean2-eps-converted-to.
+pdf>
+(epstopdf)             Command: <repstopdf --outfile=chapter1/Figures3_clean2-e
+ps-converted-to.pdf chapter1/Figures3_clean2.eps>
+(epstopdf)             \includegraphics on input line 703.
+Package epstopdf Info: Output file is already uptodate.
+
+! Package pdftex.def Error: File `chapter1/Figures3_clean2-eps-converted-to.pdf
+' not found.
+
+See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.728 ...hics[scale=0.7]{chapter1/Figures3_clean2}
-                                                  \foreignlanguage{british}{...
-
+l.703 ...[scale=0.7]{chapter1/Figures3_clean2.eps}
+                                                   {\caption[text to list of
 ? 
 
-! LaTeX Error: File `"chapter1/Figure20 - before_after"' not found.
+LaTeX Warning: File `"chapter1/Figure20 - before_after .eps"' not found on inpu
+t line 730.
+
+
+! LaTeX Error: Unknown graphics extension: .eps".
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.753 ...chapter1/Figure20 - before_after\string"}
-                                                  \foreignlanguage{british}{...
-
+l.730 .eps\string"}
+                    {\caption[text to list of figures]{%
 ? 
 
-! LaTeX Error: File `chapter1/currents_before_after_aversive' not found.
+LaTeX Warning: File `chapter1/currents_before_after_aversive .eps' not found on
+ input line 746.
 
-See the LaTeX manual or LaTeX Companion for explanation.
+Package epstopdf Info: Source file: <chapter1/currents_before_after_aversive .e
+ps>
+(epstopdf)             Output file: <chapter1/currents_before_after_aversive -e
+ps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=chapter1/currents_before_a
+fter_aversive -eps-converted-to.pdf chapter1/currents_before_after_aversive .ep
+s>
+(epstopdf)             \includegraphics on input line 746.
+Package epstopdf Info: Output file is already uptodate.
+
+! Package pdftex.def Error: File `chapter1/currents_before_after_aversive -eps-
+converted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.768 ...{chapter1/currents_before_after_aversive}
-                                                  \foreignlanguage{british}{...
-
+l.746 .eps}
+            {\caption[text to list of figures]{%
 ? 
 [19]
 
-! LaTeX Error: File `chapter1/Figure7_lateral_inihibition_vers2' not found.
+LaTeX Warning: File `chapter1/Figure7_lateral_inihibition_vers2 .eps' not found
+ on input line 771.
 
-See the LaTeX manual or LaTeX Companion for explanation.
+Package epstopdf Info: Source file: <chapter1/Figure7_lateral_inihibition_vers2
+ .eps>
+(epstopdf)             Output file: <chapter1/Figure7_lateral_inihibition_vers2
+ -eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=chapter1/Figure7_lateral_i
+nihibition_vers2 -eps-converted-to.pdf chapter1/Figure7_lateral_inihibition_ver
+s2 .eps>
+(epstopdf)             \includegraphics on input line 771.
+Package epstopdf Info: Output file is already uptodate.
+
+! Package pdftex.def Error: File `chapter1/Figure7_lateral_inihibition_vers2 -e
+ps-converted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.797 ...apter1/Figure7_lateral_inihibition_vers2}
-                                                  \foreignlanguage{british}{...
-
+l.771 .eps}
+            {\caption[text to list of figures]{%
 ? 
 
 Package natbib Warning: Citation `Campbell:2013fba' on page 20 undefined on inp
-ut line 831.
+ut line 802.
 
-
-LaTeX Warning: File `chapter1/Figure7_overlap2_new.ai' not found on input line 
-838.
-
-
-! LaTeX Error: Unknown graphics extension: .ai.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.838 ...le=0.6]{chapter1/Figure7_overlap2_new.ai}
-                                                  \foreignlanguage{british}{...
-
-? 
 [20]
 
-LaTeX Warning: File `chapter1/Final_figure_trained_twice.ai' not found on input
- line 879.
+LaTeX Warning: File `chapter1/Figure7_overlap2_new.eps' not found on input line
+ 806.
 
+Package epstopdf Info: Source file: <chapter1/Figure7_overlap2_new.eps>
+(epstopdf)             Output file: <chapter1/Figure7_overlap2_new-eps-converte
+d-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=chapter1/Figure7_overlap2_
+new-eps-converted-to.pdf chapter1/Figure7_overlap2_new.eps>
+(epstopdf)             \includegraphics on input line 806.
+Package epstopdf Info: Output file is already uptodate.
 
-! LaTeX Error: Unknown graphics extension: .ai.
+! Package pdftex.def Error: File `chapter1/Figure7_overlap2_new-eps-converted-t
+o.pdf' not found.
 
-See the LaTeX manual or LaTeX Companion for explanation.
+See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.879 ...]{chapter1/Final_figure_trained_twice.ai}
-                                                  \foreignlanguage{british}{...
-
+l.806 ...e=0.6]{chapter1/Figure7_overlap2_new.eps}
+                                                   {\caption[text to list
 ? 
 [21]
+
+LaTeX Warning: File `chapter1/Final_figure_trained_twice.eps' not found on inpu
+t line 845.
+
+Package epstopdf Info: Source file: <chapter1/Final_figure_trained_twice.eps>
+(epstopdf)             Output file: <chapter1/Final_figure_trained_twice-eps-co
+nverted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=chapter1/Final_figure_trai
+ned_twice-eps-converted-to.pdf chapter1/Final_figure_trained_twice.eps>
+(epstopdf)             \includegraphics on input line 845.
+Package epstopdf Info: Output file is already uptodate.
+
+! Package pdftex.def Error: File `chapter1/Final_figure_trained_twice-eps-conve
+rted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.845 ...{chapter1/Final_figure_trained_twice.eps}
+                                                   {\caption[text
+? 
+[22]
 Chapter 4.
 
-Package natbib Warning: Citation `Hige:2015er' on page 22 undefined on input li
-ne 924.
+Package natbib Warning: Citation `Hige:2015er' on page 23 undefined on input li
+ne 888.
 
 
-Package natbib Warning: Citation `Wu:2007ie' on page 22 undefined on input line
- 934.
+Package natbib Warning: Citation `Wu:2007ie' on page 23 undefined on input line
+ 898.
 
-[22
+[23
 
 ]
 
-Package natbib Warning: Citation `Yarali:2008dt' on page 23 undefined on input 
-line 948.
+Package natbib Warning: Citation `Yarali:2008dt' on page 24 undefined on input 
+line 912.
 
 
-Package natbib Warning: Citation `Yarali:2008dt' on page 23 undefined on input 
-line 950.
+Package natbib Warning: Citation `Yarali:2008dt' on page 24 undefined on input 
+line 914.
 
 
-Package natbib Warning: Citation `Yarali:2008dt' on page 23 undefined on input 
-line 952.
+Package natbib Warning: Citation `Yarali:2008dt' on page 24 undefined on input 
+line 916.
 
 
-Package natbib Warning: Citation `Perisse:2013fp' on page 23 undefined on input
- line 955.
+Package natbib Warning: Citation `Perisse:2013fp' on page 24 undefined on input
+ line 919.
 
-[23]
+[24]
 
-Package natbib Warning: Citation `Greenspan:2004iu' on page 24 undefined on inp
-ut line 970.
-
-
-Package natbib Warning: Citation `Owald:2015cn' on page 24 undefined on input l
-ine 986.
+Package natbib Warning: Citation `Greenspan:2004iu' on page 25 undefined on inp
+ut line 934.
 
 
-Package natbib Warning: Citation `Lin:2014io' on page 24 undefined on input lin
-e 1003.
+Package natbib Warning: Citation `Owald:2015cn' on page 25 undefined on input l
+ine 950.
 
-[24] [25]
+
+Package natbib Warning: Citation `Lin:2014io' on page 25 undefined on input lin
+e 967.
+
+[25] [26]
 Chapter 5.
 
-! LaTeX Error: File `chapter1/Timeline' not found.
+LaTeX Warning: File `chapter1/Timeline.pdf' not found on input line 973.
 
-See the LaTeX manual or LaTeX Companion for explanation.
+
+! Package pdftex.def Error: File `chapter1/Timeline.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1011 ...degraphics[scale=0.7]{chapter1/Timeline}
-                                                  \selectlanguage{english}%
+l.973 ...raphics[scale=0.7]{chapter1/Timeline.pdf}
+                                                  %
 ? 
-) [26
+) [27
 
 ]
 No file thesis.bbl.
 
 Package natbib Warning: There were undefined citations.
 
-[27
+[28
 
 ] (./thesis.aux (./abstract/Abstract.aux) (./glossary.aux)
 (./chapter1/chapter1.aux)) ) 
 Here is how much of TeX's memory you used:
- 4669 strings out of 493089
- 65968 string characters out of 6134842
+ 4676 strings out of 493089
+ 66529 string characters out of 6134842
  135865 words of memory out of 5000000
- 8011 multiletter control sequences out of 15000+600000
- 20229 words of font info for 54 fonts, out of 8000000 for 9000
+ 8026 multiletter control sequences out of 15000+600000
+ 20542 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,9n,41p,249b,495s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,9n,39p,249b,471s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips
 /cm-super/cm-super-t1.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public
@@ -797,11 +908,12 @@ bx1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx
 fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><
 /usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></u
-sr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfti1440.pfb>
-Output written on thesis.pdf (32 pages, 305559 bytes).
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfti1440.pfb></usr
+/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on thesis.pdf (33 pages, 336069 bytes).
 PDF statistics:
- 185 PDF objects out of 1000 (max. 8388607)
- 130 compressed objects within 2 object streams
+ 192 PDF objects out of 1000 (max. 8388607)
+ 135 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
