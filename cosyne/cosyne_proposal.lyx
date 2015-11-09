@@ -42,7 +42,7 @@
 \font_sans default
 \font_typewriter default
 \font_math auto
-\font_default_family default
+\font_default_family rmdefault
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
@@ -79,7 +79,7 @@
 \use_package stmaryrd 1
 \use_package undertilde 1
 \cite_engine natbib
-\cite_engine_type authoryear
+\cite_engine_type numerical
 \biblio_style plainnat
 \use_bibtopic false
 \use_indices false
@@ -111,17 +111,7 @@
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "abstract/Abstract.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "chapter1/chapter1.lyx"
+filename "csyn_abstract.lyx"
 
 \end_inset
 
@@ -130,38 +120,14 @@ filename "chapter1/chapter1.lyx"
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\bibname}{References}
+\renewcommand{\bibname}{References}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset bibtex
-LatexCommand bibtex
-bibfiles "chapter1/my_papers"
-options "authordate1"
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Harris KD & Thiele A.
- 2011.
- Cortical state and attention.
- Nature Reviews Neuroscience 12, 509-523.
-\end_layout
-
-\begin_layout Standard
-Stringer C, Pachitariu M, Hildebrandt KJ, Bartho P, Harris KD, Linden J,
- Latham P, Lesica J, & Sahani M.
- 2015.
- Changes in inhibition explain cortical variability and its role in sensory
- representations.
- Neural Coding, Computation and Dynamics (NCCD) Conference 2015.
- Bilbao, Spain.
 \end_layout
 
 \end_body

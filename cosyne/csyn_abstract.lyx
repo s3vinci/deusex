@@ -21,7 +21,7 @@
 \font_tt_scale 100
 \graphics default
 \default_output_format default
-\output_sync 0
+\output_sync 1
 \bibtex_command default
 \index_command default
 \paperfontsize default
@@ -69,264 +69,136 @@
 
 \begin_body
 
+\begin_layout Section*
+
+\lang british
+Introduction
+\end_layout
+
 \begin_layout Standard
-The fruit fly memorises previous experiences of different smells along with
+The fruit fly memorises previous experiences of different odours along with
  information on whether the smell was associated with reward or punishment.
  The location of this memory is the mushroom body (MB), an area comprised
- of thousands of neurons that has been implicated in olfactory memory and
- decision-making.
+ of thousands of Kenyon Cells neurons (KCs) that has been implicated in
+ olfactory memory and decision-making.
  More precisely it is thought to be held in the synapses unto a small group
- of so called "mushroom body output neurons" (MBONs) which control approach
- and retreat behaviour.
- They receive their input from other mushroom body neurons and are also
- affected by dopamine.
- Experimental evidence suggesting that dopamine controls both reward and
- aversive based learning (
+ of so called "mushroom body output neurons" (MBONs) which receive excitatory
+ input from KCs.
+ The synapses are believed to change their efficacies when learning occurs
+ which alters the firing rate of a subset of MBONs which can either be "retreat"
+ or "approach" biasing MBONs 
 \begin_inset CommandInset citation
-LatexCommand citealp
-key "Perisse:2013fp"
-
-\end_inset
-
-).
- It is thus believed that MBONs form a 
-\begin_inset Quotes eld
-\end_inset
-
-valence
-\begin_inset Quotes erd
-\end_inset
-
- coding space; depending on the combined firing rates of 
-\begin_inset Quotes eld
-\end_inset
-
-retreat
-\begin_inset Quotes erd
-\end_inset
-
- and 
-\begin_inset Quotes eld
-\end_inset
-
-approach
-\begin_inset Quotes erd
-\end_inset
-
- biasing MBONs, each odour will be considered to be either appetitive, aversive
- or neutral by the fly (
-\begin_inset CommandInset citation
-LatexCommand citealp
-key "Hige:2015er"
-
-\end_inset
-
-).
- In this vein, a recent study has shown that one such MBON decreases its
- activity after appetitive training and increases its activity after aversive
- learning (
-\begin_inset CommandInset citation
-LatexCommand citealt
-key "Owald:2015cn"
-
-\end_inset
-
-).
- 
-\end_layout
-
-\begin_layout Standard
-To understand the mechanisms behind dopamine mediated learning of olfactory
- valence, we have developped a spiking model of plasticity in the olfactory
- circuit of the fruit fly.
- In our computational model we can reproduce experimental evidence that
- shows bi-directional change of firing rate in MBONs.
- Furthermore we visualize the coding space formed by the firing rates of
- MBONs and observe how odours change their position in the valence coding
- space depending on the learning paradigm used.
- Finally we make experimentally verifiable predictions, proposing that if
- only the 
-\begin_inset Quotes eld
-\end_inset
-
-retreat
-\begin_inset Quotes erd
-\end_inset
-
- biasing group of MBONs change their firing rates bi-directionally as current
- evidence suggests, aversive memories are more stable than appetitive memories.
- We also predict that bi-directional change of firing rate can enhance the
- discriminability between odours of different valences.
-\end_layout
-
-\begin_layout Section*
-Methods
-\end_layout
-
-\begin_layout Standard
-To reproduce realistic firing patterns of the MBONs we used an integrate-and-fir
-e neuron model.
- 
-\end_layout
-
-\begin_layout Standard
-We introduce an STDP (Spike-Timing Dependent Plasticity) learning rule into
- our model has been observed in the locust mushroom bodies (
-\begin_inset CommandInset citation
-LatexCommand citealp
-key "Cassenaer:2007go"
-
-\end_inset
-
-).
- 
-\end_layout
-
-\begin_layout Standard
-We used experimental data that traces the connectivity between KCs and output
- neurons (
-\begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand cite
 key "Aso:2014bh"
 
 \end_inset
 
-).
- The 
-\begin_inset Formula $M4\beta'$
+.
+ A candidate plasticity mechanism supported by experimental evidence is
+ Spike-Timing-Dependent Plasticity (STDP) where the order of the presynaptic
+ and postsynaptic spikes determine whether potentiation or depression takes
+ place.
+ However, when a neuromodulator such as dopamine is added in the experiment,
+ the synapse will always depress.
+ Dopamine is active during both reward and aversive based learning 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Perisse:2013fp"
+
 \end_inset
 
- neuron receives input from 500 KCs from the 
-\begin_inset Formula $\alpha'\beta'$
+, and different subsets of MBONs have been shown to decrease their activity
+ after learning, while others have strenghtened 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Aso:2014bh"
+
 \end_inset
 
- lobe and 400 KCs from the 
-\begin_inset Formula $\alpha\beta$
+.
+\end_layout
+
+\begin_layout Standard
+Dopamine meditated synaptic depression can be used to modify the valence
+ of an odour by weakening "retreat" biasing MBONs when the fly is presented
+ with an odour and a reward and by weakening "approach" biasing MBONs when
+ the fly is presented with an odour coupled with punishment.
+ Thus, it is belived that firing rates of opposing valence MBONs form a
+ coding space and that the fly will select between approach and retreat
+ behaviour depending on which of the two groups of MBONs (approach or retreat)
+ respond stronger to an odour.
+ A recent study has shown that one "retreat" biasing MBON decreases its
+ activity after appetitive training and increases its activity after aversive
+ learning 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Owald:2015cn"
+
 \end_inset
 
- lobe.
- The MVP2 neuron receives input from 400 KCs from the 
-\begin_inset Formula $\gamma$
+.
+ It is not understood how learning can induce bi-directional change in the
+ firing rates of MBONs.
+ In a previous modeling attempt, a learning rule was proposed where dopamine
+ gates the normal STDP function, which would suggest that learning can only
+ modify the firing rates of MBONs in a single direction 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Wessnitzer:2011dj"
+
 \end_inset
 
- lobe and 500 KCs from the 
-\begin_inset Formula $\alpha'\beta'$
+.
+ Thus the model fails at explaining recent experimental results 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Owald:2015cn"
+
 \end_inset
 
- lobe.
+.
  
 \end_layout
 
 \begin_layout Standard
-
-\lang british
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename figs_code/fig2_methods2.eps
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
+To understand the mechanisms behind dopamine mediated bi-directional learning,
+ we introduce a dopamine modulated STDP learning rule in a spiking model
+ of the fruit fly.
+ In our computational model we can reproduce experimental evidence that
+ shows bi-directional change of firing rate in MBONs.
+ Furthermore, we can visualize the coding space formed by the firing rates
+ of MBONs and observe the trajectories of odours in the valence coding space
+ when the fly is undergoing appetitive or aversive learning.
+ We show that bi-directional change of firing rate enhances the discriminability
+ between odours of different valences.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
+We make the experimentally verifiable prediction that if only the 
+\begin_inset Quotes eld
+\end_inset
 
-\lang british
-\begin_inset Caption Standard
+retreat
+\begin_inset Quotes erd
+\end_inset
 
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Learning components at the KC-MBON synapse
+ biasing subset of MBONs change their firing rates bi-directionally as current
+ evidence suggests, aversive memories are more stable than appetitive memories.
+ 
 \end_layout
 
-\end_inset
-
-KC and MBON firing properties in response to an odour and KC-MBON changes
- in response to STDP
-\end_layout
-
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\bibname}{References}
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
-A i) Raster plot showing KCs firing in response to an odour ii) 
-\begin_inset Formula $M4\beta'$
-\end_inset
-
- neuron membrane potential during appetitive training iii) Excitatory (green)
- and Inhibitory (currents) during appetitive training B) The relative timing
- of firings of the pre and post synaptic neurons induce changes in the synaptic
- 'tag' variables representing presynaptic (KCs - 
-\begin_inset Formula $x_{j}$
-\end_inset
-
-, ) and postsynaptic neurons (MBONs 
-\begin_inset Formula $y_{j}$
-\end_inset
-
-) i) The synaptic tag corresponding to spikes from one KC during a second
- of odour exposure.
- Each exponentially decaying trace corresponds to a single spike .
- ii) The synaptic tag corresponding to spikes from one MBON during a second
- of odour exposure.
- As the MBON spikes at 50 Hz the exponentially decaying eligibility trace
- is above zero during the simulation .
- (iii) The synaptic tag decays to zero (top), but if extracellular dopamine
- are present during the critical time window the maximal synaptic conductance
- w is modified .
- Here, the synaptic weight, here written as w depresses as there have been
- pre-post spike pairs and dopamine is present in the system.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section*
-
-\lang british
-Results
 \end_layout
 
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "chapter1/citations_all"
+bibfiles "my_papers"
 options "authordate1"
 
 \end_inset
