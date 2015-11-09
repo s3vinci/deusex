@@ -73,16 +73,16 @@
 \begin_layout Abstract
 The fruit fly memorises previous experiences of different smells along with
  information on whether the smell was associated with reward or punishment.
- The location of thism memory is the mushroom body (MB), an area comprised
+ The location of this memory is the mushroom body (MB), an area comprised
  of thousands of neurons that has been implicated in olfactory memory and
  decision-making.
  More precisely it is thought to be held in the synapses unto a small group
- of so called "mushroom body output neurons" (MBONs) controls approach and
- retreat behaviour.
+ of so called "mushroom body output neurons" (MBONs) which control approach
+ and retreat behaviour.
  They receive their input from other mushroom body neurons and are also
  affected by dopamine.
- Experimental evidence suggesting that dopamine controls both reward and
- aversive based learning (
+ Experimental evidence suggests that dopamine controls both reward and aversive
+ based learning (
 \begin_inset CommandInset citation
 LatexCommand citealp
 key "Perisse:2013fp"
@@ -141,7 +141,7 @@ To understand the mechanisms behind dopamine mediated learning of olfactory
  valence, we have developped a spiking model of plasticity in the olfactory
  circuit of the fruit fly.
  In our computational model we can reproduce experimental evidence that
- show bi-directional change of firing rate in MBONs.
+ shows bi-directional change of firing rate in MBONs.
  Furthermore we visualize the coding space formed by the firing rates of
  MBONs and observe how odours change their position in the valence coding
  space depending on the learning paradigm used.

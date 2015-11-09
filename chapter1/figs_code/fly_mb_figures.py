@@ -25,7 +25,6 @@ n_kc = 100
 n_kc_active = 50
 #duration = end - start
 kcs = np.zeros((m_duration,n_kc))
-
 kcs_m4 = np.zeros((m_duration,n_kc))
 kcs_mvp = np.zeros((m_duration,n_kc))
 

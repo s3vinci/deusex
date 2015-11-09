@@ -8,8 +8,8 @@
 \language english
 \language_package default
 \inputencoding auto
-\fontencoding global
-\font_roman default
+\fontencoding 
+\font_roman times
 \font_sans default
 \font_typewriter default
 \font_math auto
@@ -173,17 +173,14 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figure1_circuit_a4_vers2.ai
-	scale 60
+	filename figs/Figure1_circuit_a4_vers2.eps
+	scale 70
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-
 \lang british
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -197,6 +194,13 @@ The olfactory reinforcement learning circuit and experiment
 \end_inset
 
 Reinforcement learning experiment and circuit 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:circuit"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -489,7 +493,10 @@ The dendrites of the KCs form the calyx of the MB, and their axons project
 \end_inset
 
  lobe (
-\begin_inset Formula $Fig.1.2$
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:-anatomy-mb"
+
 \end_inset
 
 , 
@@ -548,10 +555,18 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
 \begin_inset Graphics
-	filename mb_divisions.png
+	filename figs/mb_divisions.png
 	scale 25
 
+\end_inset
+
+
+\begin_inset space \hfill{}
 \end_inset
 
 
@@ -567,12 +582,19 @@ status open
 status open
 
 \begin_layout Plain Layout
-Anatomy of the Mushroom BodyAnatomy of the Mushroom Body
+
 \end_layout
 
 \end_inset
 
- 
+ Anatomy of the mushroom body 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:-anatomy-mb"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -770,7 +792,14 @@ Dopaminergic neurons (DAs) are the most prevalent modulatory neurons that
  value signals.
  The two major clusters where most DAs reside are the PPL and the PAM clusters
  (
-\begin_inset Formula $Fig.1.1C$
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:circuit"
+
+\end_inset
+
+ 
+\begin_inset Formula $C$
 \end_inset
 
 ).
@@ -919,8 +948,8 @@ status open
 
 
 \begin_inset Graphics
-	filename Fig_starved_vs_fed.ai
-	scale 20
+	filename figs/Fig_starved_vs_fed.eps
+	scale 60
 
 \end_inset
 
@@ -949,6 +978,13 @@ Activity in the MVP2 neuron starved and fed
  Normalized calcium imaging response of the MVP2 neuron to two different
  odours, averaged from ten flies.
  
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:-starved_fed"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1078,7 +1114,10 @@ key "Pawlak:2010cn"
  Indeed, in the locust STDP experiment when octopamine was injected 1 s
  after spike pairing, synapses were only observed to depress their strength
  (
-\begin_inset Formula $Fig.2.1B$
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Dopamine-modulated-STDP"
+
 \end_inset
 
 ).
@@ -2025,7 +2064,7 @@ where
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset space \hfill{}
@@ -2450,10 +2489,18 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename Fig2_methods1.ai
-	scale 60
+\begin_inset space \hfill{}
+\end_inset
 
+
+\begin_inset Graphics
+	filename figs/Fig2_methods1.eps
+	scale 78
+
+\end_inset
+
+
+\begin_inset space \hfill{}
 \end_inset
 
 
@@ -2471,7 +2518,14 @@ Learning components at the KC-MBON synapse
 
 \end_inset
 
-Learning components at the KC-MBON synapse
+Dopamine modulated STDP rule 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Dopamine-modulated-STDP"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2517,20 +2571,7 @@ t.
  In blue, the STDP rule observed when octopamine is injected 1s after pairing.
  B) Dopamine modulated spike-timing dependent learning rule: Near-coincident
  pre- and postsynaptic spikes induces synaptic depression.
- C) i) Raster plot showing KCs firing in response to an odour ii) 
-\begin_inset Formula $M4\beta'$
-\end_inset
-
- neuron membrane potential during appetitive training iii) Excitatory (green)
- and Inhibitory (currents) during appetitive training D) i) The relative
- timing of firings of the pre and post synaptic neurons induce changes in
- the synaptic 'tag' variable according to the dopamine modulated STDP learning
- rule.
- ii) The synaptic tag decays to zero (top), but if extracellular dopamine
- are present during the critical time window (middle) the maximal synaptic
- conductance w is modified (iii) The synaptic weight, here written as w
- depresses as there have been pre-post spike pairs and dopamine is present
- in the system
+ 
 \end_layout
 
 \end_inset
@@ -2550,18 +2591,24 @@ t.
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /Volumes/DeusEx/Dropbox/1 DPhil Vogels Lab/Ipython Vogels Project/Part1_Simple_Spiking_Odor_network/results/fig2_methods2.eps
-	scale 60
+	filename figs_code/fig2_methods2.eps
 
 \end_inset
 
 
-\lang british
+\begin_inset space \hfill{}
+\end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang british
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -2574,7 +2621,8 @@ Learning components at the KC-MBON synapse
 
 \end_inset
 
-Learning components at the KC-MBON synapse
+KC and MBON firing properties in response to an odour and KC-MBON changes
+ in response to STDP
 \end_layout
 
 \end_inset
@@ -2597,43 +2645,33 @@ height_special "totalheight"
 status open
 
 \begin_layout Plain Layout
-A) KC-MBON STDP learning rule, reproduced from Cassenaer and Laurent (
-\begin_inset CommandInset citation
-LatexCommand citealp
-key "Cassenaer:2007go"
-
-\end_inset
-
-).
- In gray, the normal STDP rule in KC-MBON synapses, where 
-\begin_inset Formula $\delta$
-\end_inset
-
-t is the time of the postsynaptic spike minus the presynaptic spike, and
- the y axis shows the percent change in KC-evoked EPSP size in MBONs following
- five trials in which pre- and postsynaptic spikes were paired at the given
- 
-\begin_inset Formula $\delta$
-\end_inset
-
-t.
- In blue, the STDP rule observed when octopamine is injected 1s after pairing.
- B) Dopamine modulated spike-timing dependent learning rule: Near-coincident
- pre- and postsynaptic spikes induces synaptic depression.
- C) i) Raster plot showing KCs firing in response to an odour ii) 
+A i) Raster plot showing KCs firing in response to an odour ii) 
 \begin_inset Formula $M4\beta'$
 \end_inset
 
   neuron membrane potential during appetitive training iii) Excitatory (green)
- and Inhibitory (currents) during appetitive training D) i) The relative
- timing of firings of the pre and post synaptic neurons induce changes in
- the synaptic 'tag' variable according to the dopamine modulated STDP learning
- rule.
- ii) The synaptic tag decays to zero (top), but if extracellular dopamine
- are present during the critical time window (middle) the maximal synaptic
- conductance w is modified (iii) The synaptic weight, here written as w
- depresses as there have been pre-post spike pairs and dopamine is present
- in the system
+ and Inhibitory (currents) during appetitive training B) The relative timing
+ of firings of the pre and post synaptic neurons induce changes in the synaptic
+ 'tag' variables representing presynaptic (KCs - 
+\begin_inset Formula $x_{j}$
+\end_inset
+
+, ) and postsynaptic neurons (MBONs 
+\begin_inset Formula $y_{j}$
+\end_inset
+
+) i) The synaptic tag corresponding to spikes from one KC during a second
+ of odour exposure.
+ Each exponentially decaying trace corresponds to a single spike .
+ ii) The synaptic tag corresponding to spikes from one MBON during a second
+ of odour exposure.
+ As the MBON spikes at 50 Hz the exponentially decaying eligibility trace
+ is above zero during the simulation .
+ (iii) The synaptic tag decays to zero (top), but if extracellular dopamine
+ are present during the critical time window the maximal synaptic conductance
+ w is modified .
+ Here, the synaptic weight, here written as w depresses as there have been
+ pre-post spike pairs and dopamine is present in the system.
 \end_layout
 
 \end_inset
@@ -2728,7 +2766,10 @@ In our model the firing rate of the3
  MBON determines the drive to approach.
  We visualized the valence coding space by plotting their firing rates on
  two different axes (
-\begin_inset Formula $Fig.\,3.1$
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:MBON-coding-space_before_learning"
+
 \end_inset
 
 ).
@@ -2743,11 +2784,7 @@ In our model the firing rate of the3
 \begin_inset Formula $MVP2$
 \end_inset
 
- neurons are approximately equal (
-\begin_inset Formula $Fig.3.1$
-\end_inset
-
-).
+ neurons are approximately equal ().
  Training an odour with appetitive reinforcement decreased their drive towards
  retreat while, training with aversive reinforcement both decreased their
  drive towards approach and increased their retreat drive.
@@ -2763,10 +2800,18 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
 \begin_inset Graphics
-	filename odor_space2.ai
+	filename figs/odor_space2.eps
 	scale 65
 
+\end_inset
+
+
+\begin_inset space \hfill{}
 \end_inset
 
 
@@ -2788,6 +2833,13 @@ MBON coding space before learning
 \end_inset
 
 MBON coding space before learning 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:MBON-coding-space_before_learning"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2829,7 +2881,14 @@ We observed that during appetitive training KC-
 \end_inset
 
   synaptic weights decreased (
-\begin_inset Formula $Fig.\,3.2\,A,$
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:-Appetitive-aversive-learning"
+
+\end_inset
+
+
+\begin_inset Formula $A,$
 \end_inset
 
  ii).
@@ -2849,17 +2908,34 @@ We observed that during appetitive training KC-
 \end_inset
 
   neuron compared to the naive state (
-\begin_inset Formula $Fig.\,3.2\,B$
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:-Appetitive-aversive-learning"
+
+\end_inset
+
+
+\begin_inset Formula $\,B$
 \end_inset
 
  iii).
  This is due to the fact that the firing rate of the MPV2 neuron decreased
  (
-\begin_inset Formula $Fig.\,3.2\,B\,iv$
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:-Appetitive-aversive-learning"
+
+\end_inset
+
+
+\begin_inset Formula $\,B\,iv$
 \end_inset
 
 ), thus increasing the ratio of excitation to inhibition (
-\begin_inset Formula $Fig\,.3.3$
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "currents_afer_aversive_learning"
+
 \end_inset
 
 ).
@@ -2868,18 +2944,21 @@ We observed that during appetitive training KC-
 \begin_layout Standard
 To observe a change in the firing rate that qualitatively matched the experiment
 al results (
-\begin_inset Formula $Fig\,1.2\,B)$
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:circuit"
+
+\end_inset
+
+
+\begin_inset Formula $B)$
 \end_inset
 
  wee had to choose the strength of the inhibitory MVP2-
 \begin_inset Formula $M4\beta'$
 \end_inset
 
- synapse that increased the ratio of excitation to inhibition (
-\begin_inset Formula $Fig.\,3.4)$
-\end_inset
-
-.
+ synapse that increased the ratio of excitation to inhibition ().
  The MBONs we modelled receive input from 100 KCs which fire at a rate of
  3 Hz.
  Every second they receive 300 excitatory spikes with an average weight
@@ -2891,7 +2970,7 @@ al results (
   inhibiting MVP2 neuron fires at a rate of approximately 50 Hz.
  To obtain the increase in firing rate that qualitatively matches experimental
  results (
-\begin_inset Formula $Fig\,1.2\,B)$
+\begin_inset Formula $B)$
 \end_inset
 
  we had to tune the weight of the inhibitory synapse to be twice as strong
@@ -2915,92 +2994,21 @@ The odour representation in valence space moves perpendicularly to the line
 placement H
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures3_clean2.ai
-	scale 70
-
-\end_inset
-
-
-\lang british
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status collapsed
-
-\begin_layout Plain Layout
-text to list of figures
-\end_layout
-
-\end_inset
-
- Responses of the MVP2 (approach) and
-\begin_inset Formula $M4\beta'$
-\end_inset
-
-(retreat) neurons
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-A) During appetitive training the dopamine modulated STDP rule targets the
- KC-
-\begin_inset Formula $M4\beta'$
-\end_inset
-
-  synapses i) In our simulation an odour is shown for 1 s while appetitive
- reinforcement is provided after 100 ms ii) A selection of 'weights' are
- shown that represent the efficacy of the KC-
-\begin_inset Formula $M4\beta'$
-\end_inset
-
-  synapses (blue) undergoing depression iii) Before (black) and after appetitive
- learning (light blue) 
-\begin_inset Formula $M4\beta'$
-\end_inset
-
- response to the odour iv) Before (black) and after (purple) appetitive
- learning response of the MVP2 neuron.
- B) During aversive training dopamine modulated STDP targets the KC-MVP
- synapse leading to disinhibition of the M4 neuron i) An odour is shown
- for 3 s paired with aversive reinforcement ii) A selection of 'weights'
- are shown that represent the efficacies of KC-MVP synapses (purple).
- iii) Before (black) and after aversive learning (light blue) 
-\begin_inset Formula $M4\beta'$
-\end_inset
-
- response to the odour iv) Before (black) and after (purple) aversive learning
- response of the MVP2 neuron.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\lang british
-\begin_inset Float figure
-placement H
-wide false
-sideways false
 status open
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename /Volumes/DeusEx/Dropbox/1 DPhil Vogels Lab/Ipython Vogels Project/Part1_Simple_Spiking_Odor_network/results/fig3_before_after.eps
-	scale 70
+\begin_inset space \hfill{}
+\end_inset
 
+
+\begin_inset Graphics
+	filename figs_code/fig3_before_after_aversive_appetitive.eps
+	scale 90
+
+\end_inset
+
+
+\begin_inset space \hfill{}
 \end_inset
 
 
@@ -3018,11 +3026,18 @@ text to list of figures
 
 \end_inset
 
- Responses of the MVP2 (approach) and
+ Firing rate changes of the MVP2 (approach) and
 \begin_inset Formula $M4\beta'$
 \end_inset
 
-(retreat) neurons
+(retreat) neurons after appetitive and aversive learning 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:-Appetitive-aversive-learning"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3081,7 +3096,14 @@ status open
 
 
 \begin_inset Graphics
-	filename Figure20 - before_after.ai
+	filename figs_code/fig3_app.eps
+	scale 60
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename figs_code/fig3_aversive.eps
 	scale 60
 
 \end_inset
@@ -3106,6 +3128,13 @@ text to list of figures
 \end_inset
 
 MBON coding space after learning 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:MBON-coding-space-after-learning"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3142,75 +3171,7 @@ status open
 
 
 \begin_inset Graphics
-	filename /Volumes/DeusEx/Dropbox/1 DPhil Vogels Lab/Ipython Vogels Project/Part1_Simple_Spiking_Odor_network/fig3_app.eps
-	scale 60
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename /Volumes/DeusEx/Dropbox/1 DPhil Vogels Lab/Ipython Vogels Project/Part1_Simple_Spiking_Odor_network/fig3_aversive.eps
-	scale 60
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\lang british
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-text to list of figures
-\end_layout
-
-\end_inset
-
-MBON coding space after learning 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-A) The odour is shown before and after appetitive learning in valence coding
- space which shifts its position towards the green area of the valence space
- B) The odour is shown before and after aversive learning in the valence
- coding space which shifts its position towards the red area of the valence
- space.
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\lang british
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Graphics
-	filename currents_before_after_aversive.ai
+	filename figs_code/fig5_before_after_aversive.eps
 	scale 120
 
 \end_inset
@@ -3240,6 +3201,13 @@ text to list of figures
 \end_inset
 
 
+\begin_inset CommandInset label
+LatexCommand label
+name "currents_afer_aversive_learning"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -3251,7 +3219,7 @@ A) Synaptic current of the
 \begin_inset Formula $M4\beta'$
 \end_inset
 
- neuron after aversive training
+ neuron after aversive training 
 \end_layout
 
 \end_inset
@@ -3290,20 +3258,48 @@ status open
 To show that the MVP2-M4 inhibitory synapse is necessary and that it enhances
  discrimination we performed the simulation in two conditions, once with
  the MVP2-M4 inhibitory synapse active (
-\begin_inset Formula $Fig.3.5A$
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:-Aversive-learning_lateral_inhibition"
+
+\end_inset
+
+
+\begin_inset Formula $A$
 \end_inset
 
 ) and once without (
-\begin_inset Formula $Fig.\,3.5\,B$
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:-Aversive-learning_lateral_inhibition"
+
+\end_inset
+
+
+\begin_inset Formula $B$
 \end_inset
 
 ).
  The M4 MBON increases its firing rate only when there is an inhibitory
- synapse between the MVP2 and M4 Furthermore, if we look at the valence
- coding space (Figure 9 bottom), we observe that the inhibitory synapse
- between the MBON increases discriminability by pushing the representation
- deeper into the retreat area (
-\begin_inset Formula $Fig.3.5B$
+ synapse between the MVP2 and M4 Furthermore, if we in the valence coding
+ space represented by the firing rates of the two MBONs (
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:-Aversive-learning_lateral_inhibition"
+
+\end_inset
+
+bottom ), we observe that the inhibitory synapse between the MBON increases
+ discriminability by pushing the representation deeper into the retreat
+ area (
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:-Aversive-learning_lateral_inhibition"
+
+\end_inset
+
+
+\begin_inset Formula $B$
 \end_inset
 
  bottom).
@@ -3321,73 +3317,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figure7_lateral_inihibition_vers2.ai
-	scale 70
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\lang british
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status collapsed
-
-\begin_layout Plain Layout
-text to list of figures
-\end_layout
-
-\end_inset
-
- Aversive learning with and without MVP2 - 
-\begin_inset Formula $M4\beta'$
-\end_inset
-
-inhibition
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-To see the functional implications of lateral inhibition we pair an odour
- with aversive reinforcement and perform the simulation for 1 second with
- and without inhibition.
- A) Odour retrieval test without lateral inhibition In order: i) Response
- of approach neuron to odour after aversive training vs naive response ii)
- Response of retreat neuron to odour after aversive training vs.
- naive response iii) Odour before and after training in coding space B)
- Odour retrieval test with lateral inhibition.
- i) Response of retreat neuron to odor after aversive training vs.
- naive ii) Response of approach neuron after aversive training vs.
- naive; iii) Odor projected in valence space before and after training 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\lang british
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename /Volumes/DeusEx/Dropbox/1 DPhil Vogels Lab/Ipython Vogels Project/Part1_Simple_Spiking_Odor_network/fig4_lateral_hz.eps
-	scale 70
+	filename figs_code/fig4_lateral_hz.eps
+	scale 65
 
 \end_inset
 
@@ -3396,7 +3327,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /Volumes/DeusEx/Dropbox/1 DPhil Vogels Lab/Ipython Vogels Project/Part1_Simple_Spiking_Odor_network/fig4_lateral_coding.eps
+	filename figs_code/fig4_lateral_coding.eps
 	scale 70
 
 \end_inset
@@ -3408,14 +3339,17 @@ status open
 
 
 \begin_inset Graphics
-	filename /Volumes/DeusEx/Dropbox/1 DPhil Vogels Lab/Ipython Vogels Project/Part1_Simple_Spiking_Odor_network/fig4_nolateral_coding.eps
+	filename figs_code/fig4_nolateral_coding.eps
 	scale 70
 
 \end_inset
 
 
-\lang british
+\end_layout
 
+\begin_layout Plain Layout
+
+\lang british
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -3432,7 +3366,14 @@ text to list of figures
 \begin_inset Formula $M4\beta'$
 \end_inset
 
-inhibition
+inhibition 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:-Aversive-learning_lateral_inhibition"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3474,7 +3415,10 @@ Based on evidence that similar odour activates an overlapping subset of
 We have selected two odours with 50% overlap in the identity of KCs activated
  two mimic similar odours that appear in nature.
  In the naive state, both of the odours have a neutral valence (
-\begin_inset Formula $Fig3.6$
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Training-odours-with_overlapping_representations"
+
 \end_inset
 
 ).
@@ -3483,7 +3427,10 @@ We have selected two odours with 50% overlap in the identity of KCs activated
  When we tested both of the two odurs for their response in the MBON code
  space we observed that both odours have changed the valence to that of
  the trained odour (
-\begin_inset Formula $Fig.\,3.6$
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Training-odours-with_overlapping_representations"
+
 \end_inset
 
 ) which has been shown experimentally to occurr (
@@ -3525,9 +3472,9 @@ status open
 \begin_inset space \hfill{}
 \end_inset
 
-
+-
 \begin_inset Graphics
-	filename Figure7_overlap2_new.ai
+	filename figs/Figure7_overlap2_new.eps
 	scale 60
 
 \end_inset
@@ -3551,7 +3498,14 @@ text to list of figures
 
 \end_inset
 
-Training odours with overlapping representations
+Training odours with overlapping representations 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Training-odours-with_overlapping_representations"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3582,19 +3536,33 @@ We have shown that aversive learning leads to enhanced discriminability
 \begin_inset Formula $(Fig\,3.4\,B$
 \end_inset
 
- iii).
+ ).
  This motivated us to test the following two scenarios.
  We have trained one odour with appetitive reinforcement first and aversive
  training aftewards to observe the change in the position it occupies in
  the odour valence space (
-\begin_inset Formula $Fig\,3.5\,A$
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:MBON-coding-space-after-learning"
+
+\end_inset
+
+
+\begin_inset Formula $A$
 \end_inset
 
 ).
  Appetitive training for 2 seconds leads to a decrease in the firing rate
  of the M4 neuron (retreat) and converts the neutral odour into an odour
  that signals approach (
-\begin_inset Formula $Fig\,3.5\,A)$
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:MBON-coding-space-after-learning"
+
+\end_inset
+
+
+\begin_inset Formula $A)$
 \end_inset
 
 .
@@ -3606,7 +3574,14 @@ We have shown that aversive learning leads to enhanced discriminability
  Conversely in the following simulation we tested what happened when we
  chose to train the odour aversively first.
  The perpendicular movement in the coding space (
-\begin_inset Formula $Fig\,3.5\,B$
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:MBON-coding-space-after-learning"
+
+\end_inset
+
+
+\begin_inset Formula $B$
 \end_inset
 
 ) due to bi-directional change in the firing rate ensured that the odour
@@ -3632,7 +3607,7 @@ status open
 
 
 \begin_inset Graphics
-	filename Final_figure_trained_twice.ai
+	filename figs/Final_figure_trained_twice.eps
 	scale 60
 
 \end_inset
@@ -3656,7 +3631,14 @@ text to list of figures
 
 \end_inset
 
- Training an odour with two types of reinforcement successively
+ Training an odour with two types of reinforcement successively 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:-Training-an_odour_twice"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3697,7 +3679,10 @@ We have begun to explore how sparse odour information stored in a balanced
  We have used recent evidence that suggests that approach MBONs inhibit
  retreat MBONs (David Owald - personal communication) and have shown that
  MBON-to-MBON inhibition can lead to enhanced discrimination (
-\begin_inset Formula $Fig3.4$
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:-Aversive-learning_lateral_inhibition"
+
 \end_inset
 
 ).
@@ -3892,7 +3877,10 @@ State dependent memory retrieval
 Our experimental collaborator has recently shown that the approach MVP2
  output neuron increases its response to an odour when the fruit fly is
  hungry (
-\begin_inset Formula $Fig\,1.3$
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:-starved_fed"
+
 \end_inset
 
 ).
@@ -3930,7 +3918,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Timeline.pdf
+	filename figs/Timeline.pdf
 	scale 70
 
 \end_inset

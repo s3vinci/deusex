@@ -221,7 +221,7 @@ setstretch{1.0}
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "chapter1/chapter1_new.lyx"
+filename "chapter1/chapter1_new2.lyx"
 
 \end_inset
 
